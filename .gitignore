@@ -1,0 +1,14 @@
+# Temp Python scripts
+*.py
+!js/*.js
+
+# Student management project (separate repo)
+student managment/
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# IDE
+.vscode/
+.idea/

@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ahmed Ali - Services. Professional web development, Python projects, AI projects, SEO, and digital marketing services.">
+    <meta name="keywords" content="Ahmed Ali, Services, Web Development, Python Projects, AI Projects, SEO, Digital Marketing, Web Design">
+    <meta name="author" content="Ahmed Ali">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Services - Ahmed Ali Frontend Developer & Web Designer">
+    <meta property="og:description" content="Professional web development, Python projects, AI projects, SEO, and digital marketing services.">
+    <meta property="og:image" content="images/profile/profile-photo.svg">
+    <meta property="og:url" content="https://ahmed-ali-portfolio.com/services.html">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/icons/favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/8e9e4f6a9d.js" crossorigin="anonymous"></script>
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <title>Services - Ahmed Ali Frontend Developer & Web Designer</title>
+</head>
+<body>
+
+    <!-- Loading Screen - Premium Enhanced -->
+    <div class="loader">
+        <!-- Scan line overlay -->
+        <div class="loader-scanline"></div>
+        
+        <!-- Animated gradient orbs -->
+        <div class="loader-orb loader-orb-1"></div>
+        <div class="loader-orb loader-orb-2"></div>
+        <div class="loader-orb loader-orb-3"></div>
+        
+        <!-- Floating particles -->
+        <div class="loader-particles">
+            <div class="loader-particle"></div>
+            <div class="loader-particle"></div>
+            <div class="loader-particle"></div>
+            <div class="loader-particle"></div>
+            <div class="loader-particle"></div>
+            <div class="loader-particle"></div>
+            <div class="loader-particle"></div>
+            <div class="loader-particle"></div>
+            <div class="loader-particle"></div>
+            <div class="loader-particle"></div>
+            <div class="loader-particle"></div>
+            <div class="loader-particle"></div>
+        </div>
+        
+        <!-- Pulse rings around spinner -->
+        <div class="loader-pulse-ring"></div>
+        <div class="loader-pulse-ring"></div>
+        
+        <!-- Glow ring behind logo -->
+        <div class="loader-glow"></div>
+        
+        <div class="loader-content">
+            <!-- Animated icon -->
+            <div class="loader-icon">
+                <i class="fas fa-bolt"></i>
+            </div>
+            
+            <div class="loader-logo">
+                MA<span class="loader-logo-dot">.</span>Corp
+            </div>
+            
+            <!-- Circular SVG progress ring -->
+            <div class="loader-ring-container">
+                <svg class="loader-ring-svg" viewBox="0 0 120 120">
+                    <defs>
+                        <linearGradient id="loader-ring-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#0ea5e9" />
+                            <stop offset="50%" stop-color="#8b5cf6" />
+                            <stop offset="100%" stop-color="#06b6d4" />
+                        </linearGradient>
+                    </defs>
+                    <circle class="loader-ring-bg" cx="60" cy="60" r="54" />
+                    <circle class="loader-ring-progress" id="loader-ring-progress" cx="60" cy="60" r="54" />
+                </svg>
+                <div class="loader-spinner">
+                    <div class="loader-spinner-ring"></div>
+                    <div class="loader-spinner-ring"></div>
+                    <div class="loader-spinner-ring"></div>
+                </div>
+            </div>
+            
+            <div class="loader-tagline">Loading Amazing Experience</div>
+            
+            <div class="loader-progress-container">
+                <div class="loader-progress-bar"></div>
+            </div>
+            
+            <div class="loader-percent" id="loader-percent">0%</div>
+            
+            <div class="loader-stage" id="loader-stage">Initializing...</div>
+        </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+
+    <!-- Scroll Progress -->
+    <div class="scroll-progress"></div>
+
+    <!-- Back to Top -->
+    <button class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container navbar-container">
+            <a href="index.html" class="navbar-brand">
+                <span class="logo-text">Ahmed Ali</span>
+            </a>
+
+            <div class="navbar-nav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="services.html" class="nav-link active">Services</a>
+                <a href="skills.html" class="nav-link">Skills</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+<a href="contact.html" class="nav-link">Contact</a>
+                <button class="theme-toggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+
+            <button class="menu-toggle" aria-label="Toggle mobile menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="section" style="background: linear-gradient(135deg, var(--clr-primary) 0%, var(--clr-primary-dark) 100%); color: var(--clr-white); padding: calc(var(--spacing-4xl) + 80px) 0 var(--spacing-3xl);">
+        <div class="container text-center">
+            <h1 class="section-title" style="color: var(--clr-white); font-size: var(--font-size-5xl);" data-animate="fadeInDown">My Services</h1>
+            <p class="section-subtitle" style="color: rgba(255, 255, 255, 0.8); max-width: 700px; margin: 0 auto;">
+                Professional web development, Python, AI, SEO, and digital marketing services to help your business grow online
+            </p>
+        </div>
+    </section>
+
+    <!-- Services Grid Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What I Offer</h2>
+                <p class="section-subtitle">Professional services tailored to your needs</p>
+            </div>
+
+            <div class="grid" style="grid-template-columns: repeat(3, 1fr); gap: var(--spacing-xl);">
+                <!-- Service 1: Web Development -->
+                <div class="card" id="web-development" data-animate="fadeInUp" data-animate-delay="1">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h3 class="card-title">Web Development</h3>
+                    </div>
+                    <p class="card-text">Building modern, responsive, and high-performance websites using HTML, CSS, JavaScript, and Python. From simple landing pages to full-featured web applications.</p>
+                    <div class="service-features" style="margin: var(--spacing-md) 0;">
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="margin-bottom: var(--spacing-xs); display: flex; align-items: center; gap: var(--spacing-sm); color: var(--clr-text-light); font-size: var(--font-size-sm);">
+                                <i class="fas fa-check" style="color: var(--clr-primary);"></i> HTML, CSS, JavaScript & Python
+                            </li>
+                            <li style="margin-bottom: var(--spacing-xs); display: flex; align-items: center; gap: var(--spacing-sm); color: var(--clr-text-light); font-size: var(--font-size-sm);">
+                                <i class="fas fa-check" style="color: var(--clr-primary);"></i> Responsive & interactive design
+                            </li>
+                            <li style="margin-bottom: var(--spacing-xs); display: flex; align-items: center; gap: var(--spacing-sm); color: var(--clr-text-light); font-size: var(--font-size-sm);">
+                                <i class="fas fa-check" style="color: var(--clr-primary);"></i> Full-featured web applications
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="btn btn-outline btn-sm learn-more-btn" data-service="web-development" style="width: 100%;">
+                        <span>Learn More</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+
+                <!-- Service 2: Python Projects -->
+                <div class="card" id="python-projects" data-animate="fadeInUp" data-animate-delay="2">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <h3 class="card-title">Python Projects</h3>
+                    </div>
+                    <p class="card-text">Developing Python-based solutions including automation scripts, data processing tools, web scraping, file management, and backend systems for various business needs.</p>
+                    <div class="service-features" style="margin: var(--spacing-md) 0;">
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="margin-bottom: var(--spacing-xs); display: flex; align-items: center; gap: var(--spacing-sm); color: var(--clr-text-light); font-size: var(--font-size-sm);">
+                                <i class="fas fa-check" style="color: var(--clr-primary);"></i> Automation scripts & tools
+                            </li>
+                            <li style="margin-bottom: var(--spacing-xs); display: flex; align-items: center; gap: var(--spacing-sm); color: var(--clr-text-light); font-size: var(--font-size-sm);">
+                                <i class="fas fa-check" style="color: var(--clr-primary);"></i> Data processing & analysis
+                            </li>
+                            <li style="margin-bottom: var(--spacing-xs); display: flex; align-items: center; gap: var(--spacing-sm); color: var(--clr-text-light); font-size: var(--font-size-sm);">
+                                <i class="fas fa-check" style="color: var(--clr-primary);"></i> Web scraping & backend systems
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="btn btn-outline btn-sm learn-more-btn" data-service="python-projects" style="width: 100%;">
+                        <span>Learn More</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+
+                <!-- Service 3: AI Projects -->
+                <div class="card" id="ai-projects" data-animate="fadeInUp" data-animate-delay="3">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3 class="card-title">AI Projects</h3>
+                    </div>
+                    <p class="card-text">Building intelligent solutions using AI concepts including chatbots, recommendation systems, data analysis, and machine learning models to automate and optimize workflows.</p>
+                    <div class="service-features" style="margin: var(--spacing-md) 0;">
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="margin-bottom: var(--spacing-xs); display: flex; align-items: center; gap: var(--spacing-sm); color: var(--clr-text-light); font-size: var(--font-size-sm);">
+                                <i class="fas fa-check" style="color: var(--clr-primary);"></i> Chatbots & recommendation systems
+                            </li>
+                            <li style="margin-bottom: var(--spacing-xs); display: flex; align-items: center; gap: var(--spacing-sm); color: var(--clr-text-light); font-size: var(--font-size-sm);">
+                                <i class="fas fa-check" style="color: var(--clr-primary);"></i> Data analysis & ML models
+                            </li>
+                            <li style="margin-bottom: var(--spacing-xs); display: flex; align-items: center; gap: var(--spacing-sm); color: var(--clr-text-light); font-size: var(--font-size-sm);">
+                                <i class="fas fa-check" style="color: var(--clr-primary);"></i> Workflow automation & optimization
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="btn btn-outline btn-sm learn-more-btn" data-service="ai-projects" style="width: 100%;">
+                        <span>Learn More</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+
+                <!-- Service 4: SEO -->
+                <div class="card" id="seo" data-animate="fadeInUp" data-animate-delay="4">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h3 class="card-title">SEO</h3>
+                    </div>
+                    <p class="card-text">Optimizing websites for search engines with proper meta tags, semantic HTML, fast loading speeds, mobile-friendliness, and content strategy to improve rankings.</p>
+                    <div class="service-features" style="margin: var(--spacing-md) 0;">
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="margin-bottom: var(--spacing-xs); display: flex; align-items: center; gap: var(--spacing-sm); color: var(--clr-text-light); font-size: var(--font-size-sm);">
+                                <i class="fas fa-check" style="color: var(--clr-primary);"></i> Meta tags & semantic HTML
+                            </li>
+                            <li style="margin-bottom: var(--spacing-xs); display: flex; align-items: center; gap: var(--spacing-sm); color: var(--clr-text-light); font-size: var(--font-size-sm);">
+                                <i class="fas fa-check" style="color: var(--clr-primary);"></i> Fast loading & mobile-friendly
+                            </li>
+                            <li style="margin-bottom: var(--spacing-xs); display: flex; align-items: center; gap: var(--spacing-sm); color: var(--clr-text-light); font-size: var(--font-size-sm);">
+                                <i class="fas fa-check" style="color: var(--clr-primary);"></i> Content strategy & rankings
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="btn btn-outline btn-sm learn-more-btn" data-service="seo" style="width: 100%;">
+                        <span>Learn More</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+
+                <!-- Service 5: Digital Marketing -->
+                <div class="card" id="digital-marketing" data-animate="fadeInUp" data-animate-delay="5">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="card-title">Digital Marketing</h3>
+                    </div>
+                    <p class="card-text">Helping businesses grow online with social media management, content marketing, email campaigns, and data-driven strategies to reach the right audience.</p>
+                    <div class="service-features" style="margin: var(--spacing-md) 0;">
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="margin-bottom: var(--spacing-xs); display: flex; align-items: center; gap: var(--spacing-sm); color: var(--clr-text-light); font-size: var(--font-size-sm);">
+                                <i class="fas fa-check" style="color: var(--clr-primary);"></i> Social media management
+                            </li>
+                            <li style="margin-bottom: var(--spacing-xs); display: flex; align-items: center; gap: var(--spacing-sm); color: var(--clr-text-light); font-size: var(--font-size-sm);">
+                                <i class="fas fa-check" style="color: var(--clr-primary);"></i> Content & email marketing
+                            </li>
+                            <li style="margin-bottom: var(--spacing-xs); display: flex; align-items: center; gap: var(--spacing-sm); color: var(--clr-text-light); font-size: var(--font-size-sm);">
+                                <i class="fas fa-check" style="color: var(--clr-primary);"></i> Data-driven strategies
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="btn btn-outline btn-sm learn-more-btn" data-service="digital-marketing" style="width: 100%;">
+                        <span>Learn More</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section" style="background: var(--clr-primary-gradient); color: var(--clr-white); text-align: center;">
+        <div class="container">
+            <div class="section-header" data-animate="fadeInUp">
+                <h2 class="section-title" style="color: var(--clr-white);">Ready to Start Your Project?</h2>
+                <p class="section-subtitle" style="color: rgba(255, 255, 255, 0.8);">Let's discuss how I can help bring your ideas to life</p>
+            </div>
+
+            <div class="hero-btns flex-center" style="margin-top: var(--spacing-xl);">
+                <a href="contact.html" class="btn btn-lg" style="background: var(--clr-white); color: var(--clr-primary);">
+                    <span>Contact Me</span>
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="projects.html" class="btn btn-outline btn-lg" style="border-color: var(--clr-white); color: var(--clr-white);">
+                    <span>View My Work</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Details Modal -->
+    <div class="service-modal" id="service-modal" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.8); display: flex; align-items: center; justify-content: center; opacity: 0; visibility: hidden; transition: opacity 0.3s ease, visibility 0.3s ease; z-index: 2000;">
+        <div class="service-modal-content" style="background: var(--clr-bg); border-radius: var(--radius-xl); max-width: 800px; width: min(90%, 800px); max-height: 90vh; overflow-y: auto; position: relative;">
+            <button class="service-modal-close" style="position: absolute; top: var(--spacing-md); right: var(--spacing-md); width: 40px; height: 40px; border-radius: 50%; background: var(--clr-light-gray); border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; color: var(--clr-text);">
+                <i class="fas fa-times"></i>
+            </button>
+
+            <div class="service-modal-body" style="padding: var(--spacing-3xl);">
+                <div class="service-modal-header" style="display: flex; align-items: center; gap: var(--spacing-md); margin-bottom: var(--spacing-xl);">
+                    <div class="service-modal-icon" style="width: 60px; height: 60px; border-radius: var(--radius-lg); background: var(--clr-primary-gradient); display: flex; align-items: center; justify-content: center; color: var(--clr-white); font-size: 2rem; flex-shrink: 0;">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h2 class="service-modal-title" style="font-size: var(--font-size-3xl); margin: 0;">Service Title</h2>
+                </div>
+
+                <div class="service-modal-description" style="margin-bottom: var(--spacing-xl); color: var(--clr-text-light); line-height: 1.8;">
+                    Detailed description of the service will appear here.
+                </div>
+
+                <div class="service-modal-sections" style="display: grid; gap: var(--spacing-xl);">
+                    <!-- Technologies -->
+                    <div class="service-section">
+                        <h3 style="font-size: var(--font-size-xl); margin-bottom: var(--spacing-md); color: var(--clr-primary);">Technologies Used</h3>
+                        <div class="service-tech-list" style="display: flex; flex-wrap: wrap; gap: var(--spacing-sm);">
+                            <span class="badge badge-primary">HTML</span>
+                            <span class="badge badge-primary">CSS</span>
+                            <span class="badge badge-primary">JavaScript</span>
+                        </div>
+                    </div>
+
+                    <!-- Process -->
+                    <div class="service-section">
+                        <h3 style="font-size: var(--font-size-xl); margin-bottom: var(--spacing-md); color: var(--clr-primary);">Development Process</h3>
+                        <ol style="padding-left: var(--spacing-lg); color: var(--clr-text-light);">
+                            <li style="margin-bottom: var(--spacing-xs);">Planning and research</li>
+                            <li style="margin-bottom: var(--spacing-xs);">Design and prototyping</li>
+                            <li style="margin-bottom: var(--spacing-xs);">Development and coding</li>
+                            <li style="margin-bottom: var(--spacing-xs);">Testing and optimization</li>
+                            <li style="margin-bottom: var(--spacing-xs);">Delivery and deployment</li>
+                        </ol>
+                    </div>
+
+                    <!-- Features -->
+                    <div class="service-section">
+                        <h3 style="font-size: var(--font-size-xl); margin-bottom: var(--spacing-md); color: var(--clr-primary);">Key Features</h3>
+                        <ul style="list-style: none; padding: 0; display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--spacing-sm);">
+                            <li style="display: flex; align-items: center; gap: var(--spacing-sm); color: var(--clr-text-light);">
+                                <i class="fas fa-check" style="color: var(--clr-primary);"></i> Feature 1
+                            </li>
+                            <li style="display: flex; align-items: center; gap: var(--spacing-sm); color: var(--clr-text-light);">
+                                <i class="fas fa-check" style="color: var(--clr-primary);"></i> Feature 2
+                            </li>
+                            <li style="display: flex; align-items: center; gap: var(--spacing-sm); color: var(--clr-text-light);">
+                                <i class="fas fa-check" style="color: var(--clr-primary);"></i> Feature 3
+                            </li>
+                            <li style="display: flex; align-items: center; gap: var(--spacing-sm); color: var(--clr-text-light);">
+                                <i class="fas fa-check" style="color: var(--clr-primary);"></i> Feature 4
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Benefits -->
+                    <div class="service-section">
+                        <h3 style="font-size: var(--font-size-xl); margin-bottom: var(--spacing-md); color: var(--clr-primary);">Benefits</h3>
+                        <div class="service-benefits" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--spacing-md);">
+                            <div class="benefit-item" style="background: var(--clr-light-gray); padding: var(--spacing-md); border-radius: var(--radius-md);">
+                                <i class="fas fa-bolt" style="color: var(--clr-primary); font-size: 1.5rem; margin-bottom: var(--spacing-sm);"></i>
+                                <h4 style="margin-bottom: var(--spacing-xs);">Fast Delivery</h4>
+                                <p style="color: var(--clr-text-muted); font-size: var(--font-size-sm);">Quick turnaround times without compromising quality.</p>
+                            </div>
+                            <div class="benefit-item" style="background: var(--clr-light-gray); padding: var(--spacing-md); border-radius: var(--radius-md);">
+                                <i class="fas fa-shield-alt" style="color: var(--clr-primary); font-size: 1.5rem; margin-bottom: var(--spacing-sm);"></i>
+                                <h4 style="margin-bottom: var(--spacing-xs);">Quality Guarantee</h4>
+                                <p style="color: var(--clr-text-muted); font-size: var(--font-size-sm);">Clean, well-documented code with best practices.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Example Project -->
+                    <div class="service-section">
+                        <h3 style="font-size: var(--font-size-xl); margin-bottom: var(--spacing-md); color: var(--clr-primary);">Example Project</h3>
+                        <div class="example-project" style="background: var(--clr-light-gray); border-radius: var(--radius-lg); padding: var(--spacing-xl); text-align: center;">
+                            <i class="fas fa-project-diagram" style="font-size: 3rem; color: var(--clr-primary); margin-bottom: var(--spacing-md);"></i>
+                            <h4 style="margin-bottom: var(--spacing-sm);">See my portfolio for examples</h4>
+                            <p style="color: var(--clr-text-muted); margin-bottom: var(--spacing-md);">Check out my projects page to see examples of this service in action.</p>
+                            <a href="projects.html" class="btn btn-primary btn-sm">
+                                <span>View Projects</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CTA -->
+                <div class="service-modal-cta" style="margin-top: var(--spacing-3xl); text-align: center;">
+                    <a href="contact.html" class="btn btn-primary btn-lg">
+                        <span>Request This Service</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <!-- Footer Brand + Social Buttons -->
+                <div class="footer-col">
+                    <h3>MA Corporation</h3>
+                    <p style="color: var(--clr-text-muted); margin-bottom: var(--spacing-lg);">
+                        Professional AI Engineer & Full Stack Web Developer creating modern, responsive, and high-performance web solutions with AI-powered features.
+                    </p>
+                    <div class="footer-social-buttons">
+                        <a href="https://wa.me/923194504717" target="_blank" rel="noopener noreferrer" class="footer-social-btn footer-social-btn-whatsapp" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>WhatsApp</span>
+                        </a>
+                        <a href="https://linkedin.com/in/ahmedali" target="_blank" rel="noopener noreferrer" class="footer-social-btn footer-social-btn-linkedin" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://instagram.com/ahmedali" target="_blank" rel="noopener noreferrer" class="footer-social-btn footer-social-btn-instagram" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                            <span>Instagram</span>
+                        </a>
+                        <a href="https://facebook.com/ahmedali" target="_blank" rel="noopener noreferrer" class="footer-social-btn footer-social-btn-facebook" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                            <span>Facebook</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div class="footer-col">
+                    <h3>Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="services.html#frontend">Web Design</a></li>
+                        <li><a href="services.html#frontend">Frontend Development</a></li>
+                        <li><a href="services.html#ui-ux">UI/UX Design</a></li>
+                        <li><a href="services.html#javascript">JavaScript Development</a></li>
+                        <li><a href="services.html#python">Python Development</a></li>
+                        <li><a href="services.html#ai">AI Solutions</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="footer-col">
+                    <h3>Newsletter</h3>
+                    <p style="color: var(--clr-text-muted); font-size: var(--font-size-sm); margin-bottom: var(--spacing-lg);">
+                        Subscribe to get the latest updates on projects, services, and tech insights.
+                    </p>
+                    <form class="footer-newsletter" onsubmit="event.preventDefault(); alert('Thank you for subscribing!');">
+                        <div class="footer-newsletter-input-group">
+                            <input type="email" placeholder="Your email address" required class="footer-newsletter-input">
+                            <button type="submit" class="footer-newsletter-btn">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </form>
+                    <div class="footer-contact-mini" style="margin-top: var(--spacing-lg);">
+                        <a href="mailto:macorporaation.bussiness@gmail.com" style="color: var(--clr-text-muted); font-size: var(--font-size-sm); display: block; margin-bottom: var(--spacing-xs);">
+                            <i class="fas fa-envelope" style="margin-right: var(--spacing-sm);"></i>macorporaation.bussiness@gmail.com
+                        </a>
+                        <a href="tel:92 319 4504717" style="color: var(--clr-text-muted); font-size: var(--font-size-sm); display: block;">
+                            <i class="fas fa-phone" style="margin-right: var(--spacing-sm);"></i>92 319 4504717
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p>&copy; 2026 MA Corporation. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/projects.js"></script>
+<script src="js/contact.js"></script>
+    <script>
+        // Service Modal Functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const modal = document.getElementById('service-modal');
+            const modalClose = modal.querySelector('.service-modal-close');
+            const learnMoreBtns = document.querySelectorAll('.learn-more-btn');
+
+            // Service data
+            const services = {
+                'web-development': {
+                    title: 'Web Development',
+                    icon: 'fas fa-globe',
+                    description: 'I build modern, responsive, and high-performance websites using HTML, CSS, JavaScript, and Python. From simple landing pages to full-featured web applications, I deliver clean, semantic code that provides exceptional user experiences.',
+                    technologies: ['HTML', 'CSS', 'JavaScript', 'Python'],
+                    process: [
+                        'Planning and research - Understanding requirements and target audience',
+                        'Design and prototyping - Creating wireframes and mockups',
+                        'Development and coding - Writing clean, semantic code',
+                        'Testing and optimization - Ensuring cross-browser compatibility and performance',
+                        'Delivery and deployment - Handing over the final product'
+                    ],
+                    features: ['Responsive Design', 'Interactive UI', 'Python Integration', 'Cross-browser Compatible', 'Performance Optimized', 'Clean Code']
+                },
+                'python-projects': {
+                    title: 'Python Projects',
+                    icon: 'fab fa-python',
+                    description: 'I develop Python-based solutions including automation scripts, data processing tools, web scraping, file management, and backend systems. My Python projects help businesses automate repetitive tasks and process data efficiently.',
+                    technologies: ['Python', 'BeautifulSoup', 'Pandas', 'Automation'],
+                    process: [
+                        'Requirement analysis - Understanding the automation needs',
+                        'Planning - Outlining the Python architecture',
+                        'Development - Writing clean, modular Python code',
+                        'Testing - Ensuring functionality works correctly',
+                        'Optimization - Improving performance and reliability'
+                    ],
+                    features: ['File Organization', 'Data Processing', 'Web Scraping', 'Task Automation', 'PDF Processing', 'Email Automation']
+                },
+                'ai-projects': {
+                    title: 'AI Projects',
+                    icon: 'fas fa-robot',
+                    description: 'I build intelligent solutions using AI concepts including chatbots, recommendation systems, data analysis, and machine learning models. These solutions help automate and optimize workflows for businesses.',
+                    technologies: ['Python', 'Machine Learning', 'NLP', 'Data Analysis'],
+                    process: [
+                        'Problem analysis - Understanding the business problem',
+                        'Data collection - Gathering and preparing data',
+                        'Model development - Building and training AI models',
+                        'Testing - Evaluating model performance',
+                        'Deployment - Integrating the solution'
+                    ],
+                    features: ['Chatbots', 'Recommendation Systems', 'Data Analysis', 'ML Models', 'Workflow Automation', 'Intelligent Solutions']
+                },
+                'seo': {
+                    title: 'SEO',
+                    icon: 'fas fa-search',
+                    description: 'I optimize websites for search engines with proper meta tags, semantic HTML, fast loading speeds, mobile-friendliness, and content strategy to improve rankings and drive organic traffic.',
+                    technologies: ['SEO', 'HTML', 'Performance', 'Analytics'],
+                    process: [
+                        'Audit - Analyzing current SEO performance',
+                        'Keyword research - Finding the right keywords',
+                        'On-page optimization - Optimizing content and HTML',
+                        'Technical SEO - Improving site speed and structure',
+                        'Monitoring - Tracking rankings and performance'
+                    ],
+                    features: ['Meta Tags', 'Semantic HTML', 'Fast Loading', 'Mobile-friendly', 'Content Strategy', 'Rankings Improvement']
+                },
+                'digital-marketing': {
+                    title: 'Digital Marketing',
+                    icon: 'fas fa-chart-line',
+                    description: 'I help businesses grow online with social media management, content marketing, email campaigns, and data-driven strategies to reach the right audience and achieve measurable results.',
+                    technologies: ['Social Media', 'Content Marketing', 'Email', 'Analytics'],
+                    process: [
+                        'Strategy development - Creating a marketing plan',
+                        'Content creation - Developing engaging content',
+                        'Campaign execution - Running marketing campaigns',
+                        'Monitoring - Tracking performance metrics',
+                        'Optimization - Improving based on data'
+                    ],
+                    features: ['Social Media Management', 'Content Marketing', 'Email Campaigns', 'Data-driven Strategies', 'Audience Targeting', 'Performance Analytics']
+                }
+            };
+
+            // Open modal
+            learnMoreBtns.forEach(btn => {
+                btn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const serviceKey = this.dataset.service;
+                    const service = services[serviceKey];
+
+                    if (service) {
+                        // Update modal content
+                        modal.querySelector('.service-modal-icon i').className = service.icon;
+                        modal.querySelector('.service-modal-title').textContent = service.title;
+                        modal.querySelector('.service-modal-description').textContent = service.description;
+
+                        // Update technologies
+                        const techList = modal.querySelector('.service-tech-list');
+                        techList.innerHTML = '';
+                        service.technologies.forEach(tech => {
+                            const span = document.createElement('span');
+                            span.className = 'badge badge-primary';
+                            span.textContent = tech;
+                            techList.appendChild(span);
+                        });
+
+                        // Update process
+                        const processList = modal.querySelector('.service-section ol');
+                        processList.innerHTML = '';
+                        service.process.forEach(step => {
+                            const li = document.createElement('li');
+                            li.style.marginBottom = 'var(--spacing-xs)';
+                            li.textContent = step;
+                            processList.appendChild(li);
+                        });
+
+                        // Update features
+                        const featuresList = modal.querySelector('.service-section ul');
+                        featuresList.innerHTML = '';
+                        service.features.forEach(feature => {
+                            const li = document.createElement('li');
+                            li.style.display = 'flex';
+                            li.style.alignItems = 'center';
+                            li.style.gap = 'var(--spacing-sm)';
+                            li.style.color = 'var(--clr-text-light)';
+                            li.innerHTML = '<i class="fas fa-check" style="color: var(--clr-primary);"></i> ' + feature;
+                            featuresList.appendChild(li);
+                        });
+
+                        // Show modal
+                        modal.style.opacity = '1';
+                        modal.style.visibility = 'visible';
+                        document.body.style.overflow = 'hidden';
+                    }
+                });
+            });
+
+            // Close modal
+            function closeModal() {
+                modal.style.opacity = '0';
+                modal.style.visibility = 'hidden';
+                document.body.style.overflow = '';
+            }
+
+            modalClose.addEventListener('click', closeModal);
+
+            // Close on overlay click
+            modal.addEventListener('click', function(e) {
+                if (e.target === modal) {
+                    closeModal();
+                }
+            });
+
+            // Close on Escape key
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape' && modal.style.visibility === 'visible') {
+                    closeModal();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0ea5e9"/>
+      <stop offset="100%" style="stop-color:#7c3aed"/>
+    </linearGradient>
+    <clipPath id="circle">
+      <circle cx="200" cy="160" r="80"/>
+    </clipPath>
+  </defs>
+  <rect width="400" height="400" fill="url(#bg)" rx="20"/>
+  <circle cx="200" cy="160" r="80" fill="#1e293b" opacity="0.3"/>
+  <circle cx="200" cy="160" r="80" fill="#fff" opacity="0.9" clip-path="url(#circle)"/>
+  <circle cx="200" cy="160" r="80" fill="none" stroke="#fff" stroke-width="4"/>
+  <text x="200" y="175" text-anchor="middle" font-family="Arial" font-size="60" font-weight="bold" fill="#0ea5e9">MA</text>
+  <rect x="100" y="270" width="200" height="8" rx="4" fill="#fff" opacity="0.5"/>
+  <rect x="130" y="290" width="140" height="8" rx="4" fill="#fff" opacity="0.3"/>
+  <text x="200" y="380" text-anchor="middle" font-family="Arial" font-size="14" fill="#fff" opacity="0.7">MA Corporation</text>
+</svg>

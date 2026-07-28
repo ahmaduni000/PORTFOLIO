@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ahmed Ali - Professional AI Engineer & Full Stack Web Developer at MA Corporation. I create modern, responsive, and high-performance web solutions using HTML, CSS, JavaScript, Python, and AI.">
+    <meta name="keywords" content="Ahmed Ali, MA Corporation, AI Engineer, Full Stack Web Developer, Python, Flask, Web Development, AI Solutions, Portfolio">
+    <meta name="author" content="Ahmed Ali - MA Corporation">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Ahmed Ali - AI Engineer & Full Stack Web Developer | MA Corporation">
+    <meta property="og:description" content="Professional AI Engineer & Full Stack Web Developer at MA Corporation. Specializing in modern, responsive, and high-performance web solutions with AI-powered features.">
+    <meta property="og:image" content="images/profile/profile-photo.svg">
+    <meta property="og:url" content="https://ahmed-ali-portfolio.com">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/icons/favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/8e9e4f6a9d.js" crossorigin="anonymous"></script>
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <title>Ahmed Ali - AI Engineer & Full Stack Web Developer | MA Corporation</title>
+</head>
+<body>
+
+    <!-- Loading Screen - Premium Enhanced -->
+    <div class="loader">
+        <!-- Scan line overlay -->
+        <div class="loader-scanline"></div>
+        
+        <!-- Animated gradient orbs -->
+        <div class="loader-orb loader-orb-1"></div>
+        <div class="loader-orb loader-orb-2"></div>
+        <div class="loader-orb loader-orb-3"></div>
+        
+        <!-- Floating particles -->
+        <div class="loader-particles">
+            <div class="loader-particle"></div>
+            <div class="loader-particle"></div>
+            <div class="loader-particle"></div>
+            <div class="loader-particle"></div>
+            <div class="loader-particle"></div>
+            <div class="loader-particle"></div>
+            <div class="loader-particle"></div>
+            <div class="loader-particle"></div>
+            <div class="loader-particle"></div>
+            <div class="loader-particle"></div>
+            <div class="loader-particle"></div>
+            <div class="loader-particle"></div>
+        </div>
+        
+        <!-- Pulse rings around spinner -->
+        <div class="loader-pulse-ring"></div>
+        <div class="loader-pulse-ring"></div>
+        
+        <!-- Glow ring behind logo -->
+        <div class="loader-glow"></div>
+        
+        <div class="loader-content">
+            <!-- Animated icon -->
+            <div class="loader-icon">
+                <i class="fas fa-bolt"></i>
+            </div>
+            
+            <div class="loader-logo">
+                MA<span class="loader-logo-dot">.</span>Corp
+            </div>
+            
+            <!-- Circular SVG progress ring -->
+            <div class="loader-ring-container">
+                <svg class="loader-ring-svg" viewBox="0 0 120 120">
+                    <defs>
+                        <linearGradient id="loader-ring-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#0ea5e9" />
+                            <stop offset="50%" stop-color="#8b5cf6" />
+                            <stop offset="100%" stop-color="#06b6d4" />
+                        </linearGradient>
+                    </defs>
+                    <circle class="loader-ring-bg" cx="60" cy="60" r="54" />
+                    <circle class="loader-ring-progress" id="loader-ring-progress" cx="60" cy="60" r="54" />
+                </svg>
+                <div class="loader-spinner">
+                    <div class="loader-spinner-ring"></div>
+                    <div class="loader-spinner-ring"></div>
+                    <div class="loader-spinner-ring"></div>
+                </div>
+            </div>
+            
+            <div class="loader-tagline">Loading Amazing Experience</div>
+            
+            <div class="loader-progress-container">
+                <div class="loader-progress-bar"></div>
+            </div>
+            
+            <div class="loader-percent" id="loader-percent">0%</div>
+            
+            <div class="loader-stage" id="loader-stage">Initializing...</div>
+        </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+
+    <!-- Scroll Progress -->
+    <div class="scroll-progress"></div>
+
+    <!-- Back to Top -->
+    <button class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container navbar-container">
+            <a href="index.html" class="navbar-brand">
+                <span class="logo-text">Ahmed Ali</span>
+            </a>
+
+            <div class="navbar-nav">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="skills.html" class="nav-link">Skills</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+<a href="contact.html" class="nav-link">Contact</a>
+                <button class="theme-toggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+
+            <button class="menu-toggle" aria-label="Toggle mobile menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" style="min-height: 100vh; display: flex; align-items: center; position: relative; overflow: hidden;">
+        <div class="container">
+            <div class="hero-content grid" style="grid-template-columns: 1fr 1fr; gap: var(--spacing-3xl); align-items: center;">
+                <!-- Hero Text -->
+                <div class="hero-text" data-animate="fadeInLeft">
+                    <div style="display: inline-block; background: var(--clr-primary-gradient); color: var(--clr-white); padding: 4px 16px; border-radius: var(--radius-full); font-size: var(--font-size-sm); font-weight: 600; margin-bottom: var(--spacing-md); letter-spacing: 1px; text-transform: uppercase;">
+                        MA Corporation
+                    </div>
+
+                    <h1 style="font-size: var(--font-size-5xl); margin-bottom: var(--spacing-md);">
+                        Hello, I'm <span class="text-gradient">Ahmed Ali</span>
+                    </h1>
+
+                    <p class="hero-title" style="font-size: var(--font-size-2xl); margin-bottom: var(--spacing-lg);">
+                        AI Engineer & Full Stack Web Developer
+                    </p>
+
+                    <p class="hero-intro" style="font-size: var(--font-size-lg); color: var(--clr-text-light); margin-bottom: var(--spacing-xl); max-width: 600px;">
+                        Professional AI Engineer & Full Stack Web Developer at <strong>MA Corporation</strong>. Specializing in modern, responsive, and high-performance web solutions with AI-powered features.
+                    </p>
+
+                    <!-- Typing Animation -->
+                    <div class="typing-container" style="margin-bottom: var(--spacing-xl);">
+                        <span class="typing-text" style="font-size: var(--font-size-xl); font-weight: 600; color: var(--clr-primary);">
+                            AI Engineer | Full Stack Developer | Python Developer | Web Designer | AI Solutions Architect
+                        </span>
+                    </div>
+
+                    <!-- Hero Buttons -->
+                    <div class="hero-btns flex flex-wrap gap-3">
+                        <a href="projects.html" class="btn btn-primary btn-lg">
+                            <span>View My Projects</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="services.html" class="btn btn-outline btn-lg">
+                            <span>Explore Services</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="https://wa.me/923194504717" target="_blank" class="btn btn-lg" style="background: #25D366; color: var(--clr-white);">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>WhatsApp Me</span>
+                        </a>
+                        <a href="contact.html" class="btn btn-ghost btn-lg">
+                            <span>Contact Me</span>
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Hero Image -->
+                <div class="hero-image" data-animate="fadeInRight" style="display: flex; justify-content: center;">
+                    <div class="profile-pic-container" style="position: relative; display: inline-block;">
+                        <div class="profile-pic-border" style="position: absolute; inset: -10px; border-radius: 50%; background: var(--clr-primary-gradient); z-index: 0; filter: blur(20px); opacity: 0.5;"></div>
+                        <div class="profile-pic-lg" style="position: relative; z-index: 1; border: 4px solid var(--clr-white); box-shadow: var(--shadow-xl); width: 250px; height: 250px; object-fit: cover; border-radius: 50%;">
+                            <img src="images/profile/profile-photo.svg" alt="Ahmed Ali - Profile Photo" style="width: 100%; height: 100%; border-radius: 50%; object-fit: cover; display: block;">
+                        </div>
+                        <div class="profile-decoration-1 anim-shape-rotate" style="position: absolute; top: -20px; right: -20px; width: 60px; height: 60px; border-radius: 50%; background: var(--clr-primary-gradient); z-index: -1; opacity: 0.3;"></div>
+                        <div class="profile-decoration-2 anim-shape-float" style="position: absolute; bottom: -30px; left: -30px; width: 80px; height: 80px; border-radius: 50%; background: var(--clr-accent); z-index: -1; opacity: 0.2;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hero Background Shapes -->
+        <div class="hero-bg-shape-1 anim-shape-rotate" style="position: absolute; top: 10%; left: 5%; width: 120px; height: 120px; border-radius: 50%; background: radial-gradient(circle, var(--clr-primary-light), transparent); z-index: 0; opacity: 0.3;"></div>
+        <div class="hero-bg-shape-2 anim-shape-float" style="position: absolute; bottom: 15%; right: 8%; width: 100px; height: 100px; border-radius: 50%; background: radial-gradient(circle, var(--clr-primary-light), transparent); z-index: 0; opacity: 0.2;"></div>
+        <div class="hero-bg-shape-3 anim-shape-pulse" style="position: absolute; top: 50%; left: 2%; width: 80px; height: 80px; border-radius: 50%; background: radial-gradient(circle, var(--clr-accent), transparent); z-index: 0; opacity: 0.15;"></div>
+    </section>
+
+    <!-- About Preview Section -->
+    <section class="section section-sm" style="background: var(--clr-section-bg);">
+        <div class="container">
+            <div class="grid" style="grid-template-columns: 1fr 2fr; gap: var(--spacing-3xl); align-items: center;">
+                <!-- About Image -->
+                <div class="about-preview-image" data-animate="fadeInLeft" style="text-align: center;">
+                    <div class="profile-pic-lg" style="width: 200px; height: 200px; margin: 0 auto; border: 4px solid var(--clr-primary-light); box-shadow: var(--shadow-xl); display: flex; align-items: center; justify-content: center;">
+                        <img src="images/profile/profile-photo.svg" alt="Ahmed Ali" style="width: 100%; height: 100%; border-radius: 50%; object-fit: cover;">
+                    </div>
+                    <div class="stats-grid" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--spacing-md); margin-top: var(--spacing-xl);">
+                        <div class="stat-card card text-center">
+                            <div class="stat-number counter" data-target="2" style="font-size: 2rem; font-weight: 700; color: var(--clr-primary);">2+</div>
+                            <div class="stat-label" style="color: var(--clr-text-muted); font-size: var(--font-size-sm);">Projects</div>
+                        </div>
+                        <div class="stat-card card text-center">
+                            <div class="stat-number counter" data-target="3" style="font-size: 2rem; font-weight: 700; color: var(--clr-primary);">3+</div>
+                            <div class="stat-label" style="color: var(--clr-text-muted); font-size: var(--font-size-sm);">Years Learning</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- About Content -->
+                <div class="about-preview-content" data-animate="fadeInRight">
+                    <div class="section-header" style="text-align: left; margin-bottom: var(--spacing-xl);">
+                        <h2 class="section-title">MA Corporation</h2>
+                        <p class="section-subtitle">AI Engineer & Full Stack Web Developer</p>
+                    </div>
+
+                    <h3 style="font-size: var(--font-size-xl); margin-bottom: var(--spacing-md);">
+                        I'm Ahmed Ali, a Professional AI Engineer & Full Stack Web Developer at <span class="text-gradient">MA Corporation</span>
+                    </h3>
+
+                    <p style="margin-bottom: var(--spacing-md); color: var(--clr-text-light);">
+                        I specialize in creating modern, responsive, and high-performance web solutions using HTML, CSS, JavaScript, Python, Flask, and AI-powered technologies.
+                    </p>
+
+                    <p style="margin-bottom: var(--spacing-xl); color: var(--clr-text-light);">
+                        My goal is to help businesses establish a strong digital presence through professionally designed websites, custom web applications, and AI-powered solutions tailored to your business goals.
+                    </p>
+
+                    <div class="about-info-grid" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--spacing-md); margin-bottom: var(--spacing-xl);">
+                        <div class="info-card card" style="padding: var(--spacing-md); display: flex; align-items: center; gap: var(--spacing-md);">
+                            <i class="fas fa-building" style="color: var(--clr-primary); font-size: 1.5rem;"></i>
+                            <div>
+                                <strong style="display: block; font-size: var(--font-size-sm); color: var(--clr-text-muted);">Company</strong>
+                                <span style="font-weight: 600;">MA Corporation</span>
+                            </div>
+                        </div>
+                        <div class="info-card card" style="padding: var(--spacing-md); display: flex; align-items: center; gap: var(--spacing-md);">
+                            <i class="fab fa-whatsapp" style="color: #25D366; font-size: 1.5rem;"></i>
+                            <div>
+                                <strong style="display: block; font-size: var(--font-size-sm); color: var(--clr-text-muted);">WhatsApp</strong>
+                                <a href="https://wa.me/923194504717" target="_blank" style="font-weight: 600; color: var(--clr-primary);">92 319 4504717</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="about.html" class="btn btn-primary">
+                        <span>Learn More About Me</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Preview Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My Services</h2>
+                <p class="section-subtitle">What I can help you with</p>
+            </div>
+
+            <div class="grid" style="grid-template-columns: repeat(3, 1fr); gap: var(--spacing-xl);">
+                <!-- Service 1: Web Development -->
+                <div class="card" data-animate="fadeInUp" data-animate-delay="1">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h3 class="card-title">Web Development</h3>
+                    </div>
+                    <p class="card-text">Building modern, responsive, and high-performance websites using HTML, CSS, JavaScript, and Python.</p>
+                    <a href="about.html" class="btn btn-outline btn-sm" style="margin-top: var(--spacing-md);">
+                        <span>Learn More</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Service 2: Python Projects -->
+                <div class="card" data-animate="fadeInUp" data-animate-delay="2">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <h3 class="card-title">Python Projects</h3>
+                    </div>
+                    <p class="card-text">Developing Python-based solutions including automation scripts, data processing, web scraping, and backend systems.</p>
+                    <a href="about.html" class="btn btn-outline btn-sm" style="margin-top: var(--spacing-md);">
+                        <span>Learn More</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Service 3: AI Projects -->
+                <div class="card" data-animate="fadeInUp" data-animate-delay="3">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3 class="card-title">AI Projects</h3>
+                    </div>
+                    <p class="card-text">Building intelligent solutions using AI concepts including chatbots, recommendation systems, and data analysis.</p>
+                    <a href="about.html" class="btn btn-outline btn-sm" style="margin-top: var(--spacing-md);">
+                        <span>Learn More</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Service 4: SEO -->
+                <div class="card" data-animate="fadeInUp" data-animate-delay="4">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h3 class="card-title">SEO</h3>
+                    </div>
+                    <p class="card-text">Optimizing websites for search engines with meta tags, semantic HTML, fast loading, and content strategy.</p>
+                    <a href="about.html" class="btn btn-outline btn-sm" style="margin-top: var(--spacing-md);">
+                        <span>Learn More</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Service 5: Digital Marketing -->
+                <div class="card" data-animate="fadeInUp" data-animate-delay="5">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="card-title">Digital Marketing</h3>
+                    </div>
+                    <p class="card-text">Helping businesses grow online with social media management, content marketing, and data-driven strategies.</p>
+                    <a href="about.html" class="btn btn-outline btn-sm" style="margin-top: var(--spacing-md);">
+                        <span>Learn More</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="text-center" style="margin-top: var(--spacing-3xl);">
+                <a href="services.html" class="btn btn-primary">
+                    <span>View All Services</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Preview Section -->
+    <section class="section" style="background: var(--clr-section-bg);">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Some of my recent work</p>
+            </div>
+
+            <div class="grid" style="grid-template-columns: repeat(3, 1fr); gap: var(--spacing-xl);">
+                <!-- Project 1: Airline Reservation System -->
+                <div class="card" data-animate="fadeInUp" data-animate-delay="1">
+                    <div class="project-image" style="margin: -2rem -2rem 1.5rem; height: 200px; overflow: hidden; border-radius: var(--radius-lg);">
+                        <img src="images/projects/airline-project.svg" alt="Airline Reservation System" class="img-cover" style="width: 100%; height: 100%; transition: transform 0.5s ease;">
+                    </div>
+                    <div class="project-content">
+                        <span class="badge badge-primary" style="margin-bottom: var(--spacing-sm);">Featured</span>
+                        <h3 class="card-title">Airline Reservation System</h3>
+                        <p class="card-text" style="margin-bottom: var(--spacing-md);">A comprehensive airline reservation system with flight search, booking, seat selection, and passenger management.</p>
+                        <div class="project-tech" style="display: flex; gap: var(--spacing-sm); margin-bottom: var(--spacing-lg); flex-wrap: wrap;">
+                            <span class="badge badge-outline">HTML</span>
+                            <span class="badge badge-outline">CSS</span>
+                            <span class="badge badge-outline">JavaScript</span>
+                        </div>
+                        <div class="project-links flex gap-3">
+                            <a href="project-details.html?id=airline-reservation" class="btn btn-primary btn-sm">
+                                <span>View Details</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <a href="#" class="btn btn-ghost btn-sm">
+                                <i class="fas fa-eye"></i>
+                            </a>
+                            <a href="#" class="btn btn-ghost btn-sm">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Hotel Management System -->
+                <div class="card" data-animate="fadeInUp" data-animate-delay="2">
+                    <div class="project-image" style="margin: -2rem -2rem 1.5rem; height: 200px; overflow: hidden; border-radius: var(--radius-lg);">
+                        <img src="images/projects/hotel-project.svg" alt="Hotel Management System" class="img-cover" style="width: 100%; height: 100%; transition: transform 0.5s ease;">
+                    </div>
+                    <div class="project-content">
+                        <span class="badge badge-primary" style="margin-bottom: var(--spacing-sm);">Featured</span>
+                        <h3 class="card-title">Hotel Management System</h3>
+                        <p class="card-text" style="margin-bottom: var(--spacing-md);">A modern hotel management system with room listing, booking, guest information, and check-in/out management.</p>
+                        <div class="project-tech" style="display: flex; gap: var(--spacing-sm); margin-bottom: var(--spacing-lg); flex-wrap: wrap;">
+                            <span class="badge badge-outline">HTML</span>
+                            <span class="badge badge-outline">CSS</span>
+                            <span class="badge badge-outline">JavaScript</span>
+                        </div>
+                        <div class="project-links flex gap-3">
+                            <a href="project-details.html?id=hotel-management" class="btn btn-primary btn-sm">
+                                <span>View Details</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <a href="#" class="btn btn-ghost btn-sm">
+                                <i class="fas fa-eye"></i>
+                            </a>
+                            <a href="#" class="btn btn-ghost btn-sm">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: MobileStore Management System -->
+                <div class="card" data-animate="fadeInUp" data-animate-delay="3">
+                    <div class="project-image" style="margin: -2rem -2rem 1.5rem; height: 200px; overflow: hidden; border-radius: var(--radius-lg);">
+                        <img src="images/projects/python-project.svg" alt="MobileStore Management System" class="img-cover" style="width: 100%; height: 100%; transition: transform 0.5s ease;">
+                    </div>
+                    <div class="project-content">
+                        <span class="badge badge-primary" style="margin-bottom: var(--spacing-sm);">Featured</span>
+                        <h3 class="card-title">MobileStore Management System</h3>
+                        <p class="card-text" style="margin-bottom: var(--spacing-md);">A comprehensive mobile store management system for inventory tracking, sales management, customer records, and order processing.</p>
+                        <div class="project-tech" style="display: flex; gap: var(--spacing-sm); margin-bottom: var(--spacing-lg); flex-wrap: wrap;">
+                            <span class="badge badge-outline">Python</span>
+                        </div>
+                        <div class="project-links flex gap-3">
+                            <a href="project-details.html?id=python-automation" class="btn btn-primary btn-sm">
+                                <span>View Details</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <a href="#" class="btn btn-ghost btn-sm">
+                                <i class="fas fa-eye"></i>
+                            </a>
+                            <a href="#" class="btn btn-ghost btn-sm">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center" style="margin-top: var(--spacing-3xl);">
+                <a href="projects.html" class="btn btn-primary">
+                    <span>View All Projects</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Preview Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My Skills</h2>
+                <p class="section-subtitle">Technologies I work with</p>
+            </div>
+
+            <div class="grid" style="grid-template-columns: repeat(4, 1fr); gap: var(--spacing-xl);">
+                <!-- Skill 1 -->
+                <div class="card text-center" data-animate="fadeInUp" data-animate-delay="1">
+                    <div class="card-icon" style="margin: 0 auto var(--spacing-md);">
+                        <i class="fab fa-html5" style="font-size: 2rem;"></i>
+                    </div>
+                    <h3 class="card-title">HTML</h3>
+                    <div class="skill-progress-container" style="background: var(--clr-light-gray); border-radius: var(--radius-full); height: 8px; margin-top: var(--spacing-md);">
+                        <div class="skill-progress" data-percent="95" style="width: 0; height: 100%; border-radius: var(--radius-full); background: var(--clr-primary-gradient); transition: width 1.5s ease;"></div>
+                    </div>
+                    <span class="skill-percent" style="display: block; margin-top: var(--spacing-sm); font-weight: 600;">95%</span>
+                </div>
+
+                <!-- Skill 2 -->
+                <div class="card text-center" data-animate="fadeInUp" data-animate-delay="2">
+                    <div class="card-icon" style="margin: 0 auto var(--spacing-md);">
+                        <i class="fab fa-css3-alt" style="font-size: 2rem;"></i>
+                    </div>
+                    <h3 class="card-title">CSS</h3>
+                    <div class="skill-progress-container" style="background: var(--clr-light-gray); border-radius: var(--radius-full); height: 8px; margin-top: var(--spacing-md);">
+                        <div class="skill-progress" data-percent="90" style="width: 0; height: 100%; border-radius: var(--radius-full); background: var(--clr-primary-gradient); transition: width 1.5s ease;"></div>
+                    </div>
+                    <span class="skill-percent" style="display: block; margin-top: var(--spacing-sm); font-weight: 600;">90%</span>
+                </div>
+
+                <!-- Skill 3 -->
+                <div class="card text-center" data-animate="fadeInUp" data-animate-delay="3">
+                    <div class="card-icon" style="margin: 0 auto var(--spacing-md);">
+                        <i class="fab fa-js-square" style="font-size: 2rem;"></i>
+                    </div>
+                    <h3 class="card-title">JavaScript</h3>
+                    <div class="skill-progress-container" style="background: var(--clr-light-gray); border-radius: var(--radius-full); height: 8px; margin-top: var(--spacing-md);">
+                        <div class="skill-progress" data-percent="85" style="width: 0; height: 100%; border-radius: var(--radius-full); background: var(--clr-primary-gradient); transition: width 1.5s ease;"></div>
+                    </div>
+                    <span class="skill-percent" style="display: block; margin-top: var(--spacing-sm); font-weight: 600;">85%</span>
+                </div>
+
+                <!-- Skill 4 -->
+                <div class="card text-center" data-animate="fadeInUp" data-animate-delay="4">
+                    <div class="card-icon" style="margin: 0 auto var(--spacing-md);">
+                        <i class="fas fa-mobile-alt" style="font-size: 2rem;"></i>
+                    </div>
+                    <h3 class="card-title">Responsive Design</h3>
+                    <div class="skill-progress-container" style="background: var(--clr-light-gray); border-radius: var(--radius-full); height: 8px; margin-top: var(--spacing-md);">
+                        <div class="skill-progress" data-percent="90" style="width: 0; height: 100%; border-radius: var(--radius-full); background: var(--clr-primary-gradient); transition: width 1.5s ease;"></div>
+                    </div>
+                    <span class="skill-percent" style="display: block; margin-top: var(--spacing-sm); font-weight: 600;">90%</span>
+                </div>
+            </div>
+
+            <div class="text-center" style="margin-top: var(--spacing-3xl);">
+                <a href="skills.html" class="btn btn-primary">
+                    <span>View All Skills</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="section" style="background: var(--clr-primary-gradient); color: var(--clr-white); text-align: center;">
+        <div class="container">
+            <div class="section-header" data-animate="fadeInUp">
+                <h2 class="section-title" style="color: var(--clr-white);">Let's Work Together</h2>
+                <p class="section-subtitle" style="color: rgba(255, 255, 255, 0.8);">I'm ready to help you build your next project</p>
+            </div>
+
+            <div class="hero-btns flex-center" style="margin-top: var(--spacing-xl);">
+                <a href="contact.html" class="btn btn-lg" style="background: var(--clr-white); color: var(--clr-primary);">
+                    <span>Contact Me</span>
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://wa.me/923194504717" target="_blank" class="btn btn-lg" style="background: #25D366; color: var(--clr-white);">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>WhatsApp Me</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <!-- Footer Brand + Social Buttons -->
+                <div class="footer-col">
+                    <h3>MA Corporation</h3>
+                    <p style="color: var(--clr-text-muted); margin-bottom: var(--spacing-lg);">
+                        Professional AI Engineer & Full Stack Web Developer creating modern, responsive, and high-performance web solutions with AI-powered features.
+                    </p>
+                    <div class="footer-social-buttons">
+                        <a href="https://wa.me/923194504717" target="_blank" rel="noopener noreferrer" class="footer-social-btn footer-social-btn-whatsapp" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>WhatsApp</span>
+                        </a>
+                        <a href="https://linkedin.com/in/ahmedali" target="_blank" rel="noopener noreferrer" class="footer-social-btn footer-social-btn-linkedin" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://instagram.com/ahmedali" target="_blank" rel="noopener noreferrer" class="footer-social-btn footer-social-btn-instagram" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                            <span>Instagram</span>
+                        </a>
+                        <a href="https://facebook.com/ahmedali" target="_blank" rel="noopener noreferrer" class="footer-social-btn footer-social-btn-facebook" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                            <span>Facebook</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div class="footer-col">
+                    <h3>Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="services.html#frontend">Web Design</a></li>
+                        <li><a href="services.html#frontend">Frontend Development</a></li>
+                        <li><a href="services.html#ui-ux">UI/UX Design</a></li>
+                        <li><a href="services.html#javascript">JavaScript Development</a></li>
+                        <li><a href="services.html#python">Python Development</a></li>
+                        <li><a href="services.html#ai">AI Solutions</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="footer-col">
+                    <h3>Newsletter</h3>
+                    <p style="color: var(--clr-text-muted); font-size: var(--font-size-sm); margin-bottom: var(--spacing-lg);">
+                        Subscribe to get the latest updates on projects, services, and tech insights.
+                    </p>
+                    <form class="footer-newsletter" onsubmit="event.preventDefault(); alert('Thank you for subscribing!');">
+                        <div class="footer-newsletter-input-group">
+                            <input type="email" placeholder="Your email address" required class="footer-newsletter-input">
+                            <button type="submit" class="footer-newsletter-btn">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </form>
+                    <div class="footer-contact-mini" style="margin-top: var(--spacing-lg);">
+                        <a href="mailto:macorporaation.bussiness@gmail.com" style="color: var(--clr-text-muted); font-size: var(--font-size-sm); display: block; margin-bottom: var(--spacing-xs);">
+                            <i class="fas fa-envelope" style="margin-right: var(--spacing-sm);"></i>macorporaation.bussiness@gmail.com
+                        </a>
+                        <a href="tel:92 319 4504717" style="color: var(--clr-text-muted); font-size: var(--font-size-sm); display: block;">
+                            <i class="fas fa-phone" style="margin-right: var(--spacing-sm);"></i>92 319 4504717
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p>&copy; 2026 MA Corporation. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/projects.js"></script>
+<script src="js/contact.js"></script>
+</body>
+</html>
+

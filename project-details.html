@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ahmed Ali - Project Details. Detailed case study of Airline Reservation System and Hotel Management System projects.">
+    <meta name="keywords" content="Ahmed Ali, Project Details, Airline Reservation System, Hotel Management System, Case Study, HTML, CSS, JavaScript">
+    <meta name="author" content="Ahmed Ali">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Project Details - Ahmed Ali Frontend Developer & Web Designer">
+    <meta property="og:description" content="Detailed case study of Airline Reservation System and Hotel Management System projects.">
+    <meta property="og:image" content="images/profile/profile-photo.svg">
+    <meta property="og:url" content="https://ahmed-ali-portfolio.com/project-details.html">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/icons/favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/8e9e4f6a9d.js" crossorigin="anonymous"></script>
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <title>Project Details - Ahmed Ali Frontend Developer & Web Designer</title>
+</head>
+<body>
+
+    <!-- Loading Screen - Premium Enhanced -->
+    <div class="loader">
+        <!-- Scan line overlay -->
+        <div class="loader-scanline"></div>
+        
+        <!-- Animated gradient orbs -->
+        <div class="loader-orb loader-orb-1"></div>
+        <div class="loader-orb loader-orb-2"></div>
+        <div class="loader-orb loader-orb-3"></div>
+        
+        <!-- Floating particles -->
+        <div class="loader-particles">
+            <div class="loader-particle"></div>
+            <div class="loader-particle"></div>
+            <div class="loader-particle"></div>
+            <div class="loader-particle"></div>
+            <div class="loader-particle"></div>
+            <div class="loader-particle"></div>
+            <div class="loader-particle"></div>
+            <div class="loader-particle"></div>
+            <div class="loader-particle"></div>
+            <div class="loader-particle"></div>
+            <div class="loader-particle"></div>
+            <div class="loader-particle"></div>
+        </div>
+        
+        <!-- Pulse rings around spinner -->
+        <div class="loader-pulse-ring"></div>
+        <div class="loader-pulse-ring"></div>
+        
+        <!-- Glow ring behind logo -->
+        <div class="loader-glow"></div>
+        
+        <div class="loader-content">
+            <!-- Animated icon -->
+            <div class="loader-icon">
+                <i class="fas fa-bolt"></i>
+            </div>
+            
+            <div class="loader-logo">
+                MA<span class="loader-logo-dot">.</span>Corp
+            </div>
+            
+            <!-- Circular SVG progress ring -->
+            <div class="loader-ring-container">
+                <svg class="loader-ring-svg" viewBox="0 0 120 120">
+                    <defs>
+                        <linearGradient id="loader-ring-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#0ea5e9" />
+                            <stop offset="50%" stop-color="#8b5cf6" />
+                            <stop offset="100%" stop-color="#06b6d4" />
+                        </linearGradient>
+                    </defs>
+                    <circle class="loader-ring-bg" cx="60" cy="60" r="54" />
+                    <circle class="loader-ring-progress" id="loader-ring-progress" cx="60" cy="60" r="54" />
+                </svg>
+                <div class="loader-spinner">
+                    <div class="loader-spinner-ring"></div>
+                    <div class="loader-spinner-ring"></div>
+                    <div class="loader-spinner-ring"></div>
+                </div>
+            </div>
+            
+            <div class="loader-tagline">Loading Amazing Experience</div>
+            
+            <div class="loader-progress-container">
+                <div class="loader-progress-bar"></div>
+            </div>
+            
+            <div class="loader-percent" id="loader-percent">0%</div>
+            
+            <div class="loader-stage" id="loader-stage">Initializing...</div>
+        </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+
+    <!-- Scroll Progress -->
+    <div class="scroll-progress"></div>
+
+    <!-- Back to Top -->
+    <button class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container navbar-container">
+            <a href="index.html" class="navbar-brand">
+                <span class="logo-text">Ahmed Ali</span>
+            </a>
+
+            <div class="navbar-nav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="skills.html" class="nav-link">Skills</a>
+                <a href="projects.html" class="nav-link active">Projects</a>
+<a href="contact.html" class="nav-link">Contact</a>
+                <button class="theme-toggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+
+            <button class="menu-toggle" aria-label="Toggle mobile menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Project Navigation -->
+    <section class="section" style="background: linear-gradient(135deg, var(--clr-primary) 0%, var(--clr-primary-dark) 100%); color: var(--clr-white); padding: calc(var(--spacing-4xl) + 80px) 0 var(--spacing-3xl);">
+        <div class="container text-center">
+            <h1 class="section-title" style="color: var(--clr-white); font-size: var(--font-size-4xl);" data-animate="fadeInDown">Project Details</h1>
+            <p class="section-subtitle" style="color: rgba(255, 255, 255, 0.8); max-width: 700px; margin: 0 auto;">
+                Detailed case study of my featured projects
+            </p>
+        </div>
+    </section>
+
+    <!-- Project Selector -->
+    <section class="section-sm" style="background: var(--clr-bg);">
+        <div class="container">
+            <div class="project-selector" style="display: flex; justify-content: center; gap: var(--spacing-lg); flex-wrap: wrap; margin-bottom: var(--spacing-3xl);">
+                <button class="project-select-btn btn btn-outline active" data-project="airline">
+                    <i class="fas fa-plane-departure" style="margin-right: var(--spacing-sm);"></i>
+                    <span>Airline Reservation System</span>
+                </button>
+                <button class="project-select-btn btn btn-outline" data-project="hotel">
+                    <i class="fas fa-hotel" style="margin-right: var(--spacing-sm);"></i>
+                    <span>Hotel Management System</span>
+                </button>
+            </div>
+
+            <!-- Airline Reservation System Details -->
+            <div class="project-details-content" id="airline-details">
+                <!-- Overview -->
+                <section class="section-sm" data-animate="fadeInUp">
+                    <div class="card">
+                        <h2 class="section-title" style="text-align: left;">Airline Reservation System</h2>
+                        <p class="card-text" style="font-size: var(--font-size-lg); line-height: 1.8; margin-bottom: var(--spacing-lg);">
+                            A comprehensive airline reservation system built with HTML, CSS, and JavaScript. The system provides a complete solution for flight search, booking, seat selection, passenger information management, and booking confirmation.
+                        </p>
+
+                        <div class="project-meta" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--spacing-md); margin-bottom: var(--spacing-xl);">
+                            <div class="meta-item">
+                                <strong style="display: block; color: var(--clr-dark); margin-bottom: var(--spacing-xs);">Category</strong>
+                                <span style="color: var(--clr-text-muted);">Web Application</span>
+                            </div>
+                            <div class="meta-item">
+                                <strong style="display: block; color: var(--clr-dark); margin-bottom: var(--spacing-xs);">Technologies</strong>
+                                <span style="color: var(--clr-text-muted);">HTML, CSS, JavaScript</span>
+                            </div>
+                            <div class="meta-item">
+                                <strong style="display: block; color: var(--clr-dark); margin-bottom: var(--spacing-xs);">Duration</strong>
+                                <span style="color: var(--clr-text-muted);">3 Months</span>
+                            </div>
+                        </div>
+
+                        <div class="project-tech-list" style="display: flex; gap: var(--spacing-sm); margin-bottom: var(--spacing-xl); flex-wrap: wrap;">
+                            <span class="badge badge-primary">HTML5</span>
+                            <span class="badge badge-primary">CSS3</span>
+                            <span class="badge badge-primary">JavaScript ES6+</span>
+                            <span class="badge badge-primary">Responsive Design</span>
+                            <span class="badge badge-primary">Form Validation</span>
+                        </div>
+
+                        <div class="project-links flex gap-3">
+                            <a href="#" class="btn btn-primary">
+                                <span>Live Demo</span>
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="#" class="btn btn-outline">
+                                <span>GitHub</span>
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Problem & Solution -->
+                <div class="grid" style="grid-template-columns: 1fr 1fr; gap: var(--spacing-xl); margin-bottom: var(--spacing-xl);">
+                    <div class="card" data-animate="fadeInLeft">
+                        <h3 style="color: var(--clr-primary); margin-bottom: var(--spacing-md);">The Problem</h3>
+                        <p class="card-text">
+                            Traditional flight booking systems are often complex, slow, and not user-friendly. Passengers need a simple, intuitive way to search for flights, select seats, and complete bookings without unnecessary steps.
+                        </p>
+                    </div>
+                    <div class="card" data-animate="fadeInRight">
+                        <h3 style="color: var(--clr-primary); margin-bottom: var(--spacing-md);">The Solution</h3>
+                        <p class="card-text">
+                            A clean, responsive airline reservation system with intuitive flight search, interactive seat selection, and streamlined booking process that works on all devices.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Features -->
+                <section class="section-sm" data-animate="fadeInUp">
+                    <div class="card">
+                        <h3 style="color: var(--clr-primary); margin-bottom: var(--spacing-lg);">Key Features</h3>
+                        <div class="grid" style="grid-template-columns: repeat(2, 1fr); gap: var(--spacing-md);">
+                            <div class="feature-item flex gap-3" style="align-items: flex-start;">
+                                <div class="feature-icon" style="width: 40px; height: 40px; border-radius: var(--radius-full); background: var(--clr-primary-gradient); display: flex; align-items: center; justify-content: center; color: var(--clr-white); flex-shrink: 0;">
+                                    <i class="fas fa-search"></i>
+                                </div>
+                                <div>
+                                    <h4 style="margin-bottom: var(--spacing-xs);">Flight Search</h4>
+                                    <p style="color: var(--clr-text-light); font-size: var(--font-size-sm);">Search flights by destination, date, and passenger count.</p>
+                                </div>
+                            </div>
+                            <div class="feature-item flex gap-3" style="align-items: flex-start;">
+                                <div class="feature-icon" style="width: 40px; height: 40px; border-radius: var(--radius-full); background: var(--clr-primary-gradient); display: flex; align-items: center; justify-content: center; color: var(--clr-white); flex-shrink: 0;">
+                                    <i class="fas fa-chair"></i>
+                                </div>
+                                <div>
+                                    <h4 style="margin-bottom: var(--spacing-xs);">Seat Selection</h4>
+                                    <p style="color: var(--clr-text-light); font-size: var(--font-size-sm);">Interactive seat map with visual selection.</p>
+                                </div>
+                            </div>
+                            <div class="feature-item flex gap-3" style="align-items: flex-start;">
+                                <div class="feature-icon" style="width: 40px; height: 40px; border-radius: var(--radius-full); background: var(--clr-primary-gradient); display: flex; align-items: center; justify-content: center; color: var(--clr-white); flex-shrink: 0;">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div>
+                                    <h4 style="margin-bottom: var(--spacing-xs);">Passenger Info</h4>
+                                    <p style="color: var(--clr-text-light); font-size: var(--font-size-sm);">Manage passenger details with form validation.</p>
+                                </div>
+                            </div>
+                            <div class="feature-item flex gap-3" style="align-items: flex-start;">
+                                <div class="feature-icon" style="width: 40px; height: 40px; border-radius: var(--radius-full); background: var(--clr-primary-gradient); display: flex; align-items: center; justify-content: center; color: var(--clr-white); flex-shrink: 0;">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                                <div>
+                                    <h4 style="margin-bottom: var(--spacing-xs);">Booking Confirmation</h4>
+                                    <p style="color: var(--clr-text-light); font-size: var(--font-size-sm);">Confirmation page with booking reference number.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Screenshots -->
+                <section class="section-sm" data-animate="fadeInUp">
+                    <div class="card">
+                        <h3 style="color: var(--clr-primary); margin-bottom: var(--spacing-lg);">Screenshots</h3>
+                        <div class="grid" style="grid-template-columns: repeat(3, 1fr); gap: var(--spacing-xl);">
+                            <div class="screenshot-item text-center">
+                                <div class="screenshot-image" style="height: 200px; border-radius: var(--radius-lg); overflow: hidden; margin-bottom: var(--spacing-sm); background: var(--clr-light-gray); display: flex; align-items: center; justify-content: center;">
+                                    <img src="images/projects/airline-screenshot-1.svg" alt="Flight Search" class="img-cover" style="width: 100%; height: 100%;">
+                                    <i class="fas fa-image" style="font-size: 2rem; color: var(--clr-text-muted);"></i>
+                                </div>
+                                <h4 style="font-size: var(--font-size-sm);">Flight Search</h4>
+                            </div>
+                            <div class="screenshot-item text-center">
+                                <div class="screenshot-image" style="height: 200px; border-radius: var(--radius-lg); overflow: hidden; margin-bottom: var(--spacing-sm); background: var(--clr-light-gray); display: flex; align-items: center; justify-content: center;">
+                                    <img src="images/projects/airline-screenshot-2.svg" alt="Seat Selection" class="img-cover" style="width: 100%; height: 100%;">
+                                    <i class="fas fa-image" style="font-size: 2rem; color: var(--clr-text-muted);"></i>
+                                </div>
+                                <h4 style="font-size: var(--font-size-sm);">Seat Selection</h4>
+                            </div>
+                            <div class="screenshot-item text-center">
+                                <div class="screenshot-image" style="height: 200px; border-radius: var(--radius-lg); overflow: hidden; margin-bottom: var(--spacing-sm); background: var(--clr-light-gray); display: flex; align-items: center; justify-content: center;">
+                                    <img src="images/projects/airline-screenshot-3.svg" alt="Booking Confirmation" class="img-cover" style="width: 100%; height: 100%;">
+                                    <i class="fas fa-image" style="font-size: 2rem; color: var(--clr-text-muted);"></i>
+                                </div>
+                                <h4 style="font-size: var(--font-size-sm);">Confirmation</h4>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Challenges & Learning -->
+                <div class="grid" style="grid-template-columns: 1fr 1fr; gap: var(--spacing-xl); margin-bottom: var(--spacing-xl);">
+                    <div class="card" data-animate="fadeInLeft">
+                        <h3 style="color: var(--clr-primary); margin-bottom: var(--spacing-md);">Challenges</h3>
+                        <p class="card-text">
+                            The main challenge was implementing the interactive seat selection interface and managing state across multiple form steps without a backend.
+                        </p>
+                    </div>
+                    <div class="card" data-animate="fadeInRight">
+                        <h3 style="color: var(--clr-primary); margin-bottom: var(--spacing-md);">What I Learned</h3>
+                        <p class="card-text">
+                            I learned advanced JavaScript DOM manipulation, form validation techniques, and how to create complex UI interactions with vanilla JavaScript.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Future Improvements -->
+                <section class="section-sm" data-animate="fadeInUp">
+                    <div class="card">
+                        <h3 style="color: var(--clr-primary); margin-bottom: var(--spacing-md);">Future Improvements</h3>
+                        <ul style="padding-left: var(--spacing-lg); color: var(--clr-text-light); line-height: 1.8;">
+                            <li>Add backend integration for real flight data and booking management</li>
+                            <li>Implement payment gateway integration</li>
+                            <li>Add user accounts for booking history</li>
+                            <li>Integrate with real airline APIs</li>
+                            <li>Add email notifications for bookings</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Project Links -->
+                <section class="section-sm" data-animate="fadeInUp">
+                    <div class="card text-center">
+                        <h3 style="color: var(--clr-primary); margin-bottom: var(--spacing-lg);">Project Links</h3>
+                        <div class="project-links flex-center gap-3">
+                            <a href="#" class="btn btn-primary">
+                                <span>Live Demo</span>
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="#" class="btn btn-outline">
+                                <span>GitHub Repository</span>
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="projects.html" class="btn btn-ghost">
+                                <span>Back to Projects</span>
+                                <i class="fas fa-arrow-left"></i>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Hotel Management System Details (Hidden by default) -->
+            <div class="project-details-content" id="hotel-details" style="display: none;">
+                <!-- Overview -->
+                <section class="section-sm" data-animate="fadeInUp">
+                    <div class="card">
+                        <h2 class="section-title" style="text-align: left;">Hotel Management System</h2>
+                        <p class="card-text" style="font-size: var(--font-size-lg); line-height: 1.8; margin-bottom: var(--spacing-lg);">
+                            A modern hotel management system built with HTML, CSS, and JavaScript. The system provides a complete solution for room listing, booking, guest information management, check-in/check-out, and pricing display.
+                        </p>
+
+                        <div class="project-meta" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--spacing-md); margin-bottom: var(--spacing-xl);">
+                            <div class="meta-item">
+                                <strong style="display: block; color: var(--clr-dark); margin-bottom: var(--spacing-xs);">Category</strong>
+                                <span style="color: var(--clr-text-muted);">Web Application</span>
+                            </div>
+                            <div class="meta-item">
+                                <strong style="display: block; color: var(--clr-dark); margin-bottom: var(--spacing-xs);">Technologies</strong>
+                                <span style="color: var(--clr-text-muted);">HTML, CSS, JavaScript</span>
+                            </div>
+                            <div class="meta-item">
+                                <strong style="display: block; color: var(--clr-dark); margin-bottom: var(--spacing-xs);">Duration</strong>
+                                <span style="color: var(--clr-text-muted);">3 Months</span>
+                            </div>
+                        </div>
+
+                        <div class="project-tech-list" style="display: flex; gap: var(--spacing-sm); margin-bottom: var(--spacing-xl); flex-wrap: wrap;">
+                            <span class="badge badge-primary">HTML5</span>
+                            <span class="badge badge-primary">CSS3</span>
+                            <span class="badge badge-primary">JavaScript ES6+</span>
+                            <span class="badge badge-primary">Responsive Design</span>
+                            <span class="badge badge-primary">Search & Filter</span>
+                        </div>
+
+                        <div class="project-links flex gap-3">
+                            <a href="#" class="btn btn-primary">
+                                <span>Live Demo</span>
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="#" class="btn btn-outline">
+                                <span>GitHub</span>
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Problem & Solution -->
+                <div class="grid" style="grid-template-columns: 1fr 1fr; gap: var(--spacing-xl); margin-bottom: var(--spacing-xl);">
+                    <div class="card" data-animate="fadeInLeft">
+                        <h3 style="color: var(--clr-primary); margin-bottom: var(--spacing-md);">The Problem</h3>
+                        <p class="card-text">
+                            Hotel booking processes are often fragmented and confusing. Guests need a unified platform to browse rooms, check availability, and complete bookings with ease.
+                        </p>
+                    </div>
+                    <div class="card" data-animate="fadeInRight">
+                        <h3 style="color: var(--clr-primary); margin-bottom: var(--spacing-md);">The Solution</h3>
+                        <p class="card-text">
+                            A comprehensive hotel management system with room listing, availability checking, booking forms, and guest information management all in one clean interface.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Features -->
+                <section class="section-sm" data-animate="fadeInUp">
+                    <div class="card">
+                        <h3 style="color: var(--clr-primary); margin-bottom: var(--spacing-lg);">Key Features</h3>
+                        <div class="grid" style="grid-template-columns: repeat(2, 1fr); gap: var(--spacing-md);">
+                            <div class="feature-item flex gap-3" style="align-items: flex-start;">
+                                <div class="feature-icon" style="width: 40px; height: 40px; border-radius: var(--radius-full); background: var(--clr-primary-gradient); display: flex; align-items: center; justify-content: center; color: var(--clr-white); flex-shrink: 0;">
+                                    <i class="fas fa-bed"></i>
+                                </div>
+                                <div>
+                                    <h4 style="margin-bottom: var(--spacing-xs);">Room Listing</h4>
+                                    <p style="color: var(--clr-text-light); font-size: var(--font-size-sm);">Browse available rooms with categories and images.</p>
+                                </div>
+                            </div>
+                            <div class="feature-item flex gap-3" style="align-items: flex-start;">
+                                <div class="feature-icon" style="width: 40px; height: 40px; border-radius: var(--radius-full); background: var(--clr-primary-gradient); display: flex; align-items: center; justify-content: center; color: var(--clr-white); flex-shrink: 0;">
+                                    <i class="fas fa-search-dollar"></i>
+                                </div>
+                                <div>
+                                    <h4 style="margin-bottom: var(--spacing-xs);">Availability Check</h4>
+                                    <p style="color: var(--clr-text-light); font-size: var(--font-size-sm);">Check room availability by date and guest count.</p>
+                                </div>
+                            </div>
+                            <div class="feature-item flex gap-3" style="align-items: flex-start;">
+                                <div class="feature-icon" style="width: 40px; height: 40px; border-radius: var(--radius-full); background: var(--clr-primary-gradient); display: flex; align-items: center; justify-content: center; color: var(--clr-white); flex-shrink: 0;">
+                                    <i class="fas fa-user-plus"></i>
+                                </div>
+                                <div>
+                                    <h4 style="margin-bottom: var(--spacing-xs);">Guest Information</h4>
+                                    <p style="color: var(--clr-text-light); font-size: var(--font-size-sm);">Collect guest details with form validation.</p>
+                                </div>
+                            </div>
+                            <div class="feature-item flex gap-3" style="align-items: flex-start;">
+                                <div class="feature-icon" style="width: 40px; height: 40px; border-radius: var(--radius-full); background: var(--clr-primary-gradient); display: flex; align-items: center; justify-content: center; color: var(--clr-white); flex-shrink: 0;">
+                                    <i class="fas fa-money-bill-wave"></i>
+                                </div>
+                                <div>
+                                    <h4 style="margin-bottom: var(--spacing-xs);">Pricing Display</h4>
+                                    <p style="color: var(--clr-text-light); font-size: var(--font-size-sm);">Clear pricing with total calculation.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Screenshots -->
+                <section class="section-sm" data-animate="fadeInUp">
+                    <div class="card">
+                        <h3 style="color: var(--clr-primary); margin-bottom: var(--spacing-lg);">Screenshots</h3>
+                        <div class="grid" style="grid-template-columns: repeat(3, 1fr); gap: var(--spacing-xl);">
+                            <div class="screenshot-item text-center">
+                                <div class="screenshot-image" style="height: 200px; border-radius: var(--radius-lg); overflow: hidden; margin-bottom: var(--spacing-sm); background: var(--clr-light-gray); display: flex; align-items: center; justify-content: center;">
+                                    <img src="images/projects/hotel-screenshot-1.svg" alt="Room Listing" class="img-cover" style="width: 100%; height: 100%;">
+                                    <i class="fas fa-image" style="font-size: 2rem; color: var(--clr-text-muted);"></i>
+                                </div>
+                                <h4 style="font-size: var(--font-size-sm);">Room Listing</h4>
+                            </div>
+                            <div class="screenshot-item text-center">
+                                <div class="screenshot-image" style="height: 200px; border-radius: var(--radius-lg); overflow: hidden; margin-bottom: var(--spacing-sm); background: var(--clr-light-gray); display: flex; align-items: center; justify-content: center;">
+                                    <img src="images/projects/hotel-screenshot-2.svg" alt="Room Details" class="img-cover" style="width: 100%; height: 100%;">
+                                    <i class="fas fa-image" style="font-size: 2rem; color: var(--clr-text-muted);"></i>
+                                </div>
+                                <h4 style="font-size: var(--font-size-sm);">Room Details</h4>
+                            </div>
+                            <div class="screenshot-item text-center">
+                                <div class="screenshot-image" style="height: 200px; border-radius: var(--radius-lg); overflow: hidden; margin-bottom: var(--spacing-sm); background: var(--clr-light-gray); display: flex; align-items: center; justify-content: center;">
+                                    <img src="images/projects/hotel-screenshot-3.svg" alt="Booking Form" class="img-cover" style="width: 100%; height: 100%;">
+                                    <i class="fas fa-image" style="font-size: 2rem; color: var(--clr-text-muted);"></i>
+                                </div>
+                                <h4 style="font-size: var(--font-size-sm);">Booking Form</h4>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Challenges & Learning -->
+                <div class="grid" style="grid-template-columns: 1fr 1fr; gap: var(--spacing-xl); margin-bottom: var(--spacing-xl);">
+                    <div class="card" data-animate="fadeInLeft">
+                        <h3 style="color: var(--clr-primary); margin-bottom: var(--spacing-md);">Challenges</h3>
+                        <p class="card-text">
+                            The main challenge was implementing the search and filter interface for rooms and managing the booking state across multiple steps.
+                        </p>
+                    </div>
+                    <div class="card" data-animate="fadeInRight">
+                        <h3 style="color: var(--clr-primary); margin-bottom: var(--spacing-md);">What I Learned</h3>
+                        <p class="card-text">
+                            I learned how to build search/filter functionality, manage complex form states, and create responsive room listing interfaces.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Future Improvements -->
+                <section class="section-sm" data-animate="fadeInUp">
+                    <div class="card">
+                        <h3 style="color: var(--clr-primary); margin-bottom: var(--spacing-md);">Future Improvements</h3>
+                        <ul style="padding-left: var(--spacing-lg); color: var(--clr-text-light); line-height: 1.8;">
+                            <li>Add backend integration for real room data and booking management</li>
+                            <li>Implement payment gateway integration</li>
+                            <li>Add admin panel for hotel staff</li>
+                            <li>Integrate with hotel APIs for real availability</li>
+                            <li>Add email notifications for bookings</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Project Links -->
+                <section class="section-sm" data-animate="fadeInUp">
+                    <div class="card text-center">
+                        <h3 style="color: var(--clr-primary); margin-bottom: var(--spacing-lg);">Project Links</h3>
+                        <div class="project-links flex-center gap-3">
+                            <a href="#" class="btn btn-primary">
+                                <span>Live Demo</span>
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="#" class="btn btn-outline">
+                                <span>GitHub Repository</span>
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="projects.html" class="btn btn-ghost">
+                                <span>Back to Projects</span>
+                                <i class="fas fa-arrow-left"></i>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <!-- Footer Brand + Social Buttons -->
+                <div class="footer-col">
+                    <h3>MA Corporation</h3>
+                    <p style="color: var(--clr-text-muted); margin-bottom: var(--spacing-lg);">
+                        Professional AI Engineer & Full Stack Web Developer creating modern, responsive, and high-performance web solutions with AI-powered features.
+                    </p>
+                    <div class="footer-social-buttons">
+                        <a href="https://wa.me/923194504717" target="_blank" rel="noopener noreferrer" class="footer-social-btn footer-social-btn-whatsapp" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>WhatsApp</span>
+                        </a>
+                        <a href="https://linkedin.com/in/ahmedali" target="_blank" rel="noopener noreferrer" class="footer-social-btn footer-social-btn-linkedin" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://instagram.com/ahmedali" target="_blank" rel="noopener noreferrer" class="footer-social-btn footer-social-btn-instagram" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                            <span>Instagram</span>
+                        </a>
+                        <a href="https://facebook.com/ahmedali" target="_blank" rel="noopener noreferrer" class="footer-social-btn footer-social-btn-facebook" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                            <span>Facebook</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div class="footer-col">
+                    <h3>Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="services.html#frontend">Web Design</a></li>
+                        <li><a href="services.html#frontend">Frontend Development</a></li>
+                        <li><a href="services.html#ui-ux">UI/UX Design</a></li>
+                        <li><a href="services.html#javascript">JavaScript Development</a></li>
+                        <li><a href="services.html#python">Python Development</a></li>
+                        <li><a href="services.html#ai">AI Solutions</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="footer-col">
+                    <h3>Newsletter</h3>
+                    <p style="color: var(--clr-text-muted); font-size: var(--font-size-sm); margin-bottom: var(--spacing-lg);">
+                        Subscribe to get the latest updates on projects, services, and tech insights.
+                    </p>
+                    <form class="footer-newsletter" onsubmit="event.preventDefault(); alert('Thank you for subscribing!');">
+                        <div class="footer-newsletter-input-group">
+                            <input type="email" placeholder="Your email address" required class="footer-newsletter-input">
+                            <button type="submit" class="footer-newsletter-btn">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </form>
+                    <div class="footer-contact-mini" style="margin-top: var(--spacing-lg);">
+                        <a href="mailto:macorporaation.bussiness@gmail.com" style="color: var(--clr-text-muted); font-size: var(--font-size-sm); display: block; margin-bottom: var(--spacing-xs);">
+                            <i class="fas fa-envelope" style="margin-right: var(--spacing-sm);"></i>macorporaation.bussiness@gmail.com
+                        </a>
+                        <a href="tel:92 319 4504717" style="color: var(--clr-text-muted); font-size: var(--font-size-sm); display: block;">
+                            <i class="fas fa-phone" style="margin-right: var(--spacing-sm);"></i>92 319 4504717
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p>&copy; 2026 MA Corporation. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/projects.js"></script>
+<script src="js/contact.js"></script>
+    <script>
+        // Project Details Selector
+        document.addEventListener('DOMContentLoaded', function() {
+            const selectBtns = document.querySelectorAll('.project-select-btn');
+            const airlineDetails = document.getElementById('airline-details');
+            const hotelDetails = document.getElementById('hotel-details');
+
+            selectBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Update active button
+                    selectBtns.forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+
+                    // Show/hide details
+                    const project = this.dataset.project;
+                    if (project === 'airline') {
+                        airlineDetails.style.display = 'block';
+                        hotelDetails.style.display = 'none';
+                    } else if (project === 'hotel') {
+                        airlineDetails.style.display = 'none';
+                        hotelDetails.style.display = 'block';
+                    }
+
+                    // Scroll to top of details
+                    window.scrollTo({
+                        top: airlineDetails.getBoundingClientRect().top + window.scrollY - 100,
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+
