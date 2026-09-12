@@ -741,3 +741,60 @@
         background: #020617;
     }
 }
+
+/* ==========================================================================
+   Project Details Modal
+   ========================================================================== */
+.project-modal.active {
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+.project-modal.active .project-modal-content {
+    animation: project-modal-in 0.3s ease forwards;
+}
+
+@keyframes project-modal-in {
+    from {
+        opacity: 0;
+        transform: translateY(30px) scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* Mobile responsiveness for project modal */
+@media (max-width: 767px) {
+    .project-modal-body {
+        padding: var(--spacing-xl) !important;
+    }
+
+    .project-modal-image {
+        height: 160px !important;
+    }
+
+    .project-modal-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .project-modal-title {
+        font-size: var(--font-size-xl) !important;
+    }
+
+    .project-features-list {
+        grid-template-columns: 1fr !important;
+    }
+
+    .project-modal-cta .project-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-modal-cta .btn {
+        width: 100%;
+        max-width: 280px;
+    }
+}

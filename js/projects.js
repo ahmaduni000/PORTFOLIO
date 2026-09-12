@@ -13,7 +13,7 @@ const projectsData = [
         category: 'JavaScript',
         tags: ['HTML', 'CSS', 'JavaScript'],
         description: 'A comprehensive airline reservation system with flight search, booking, seat selection, and passenger management using HTML, CSS, and vanilla JavaScript.',
-        image: 'images/projects/airline-project.jpg',
+        image: 'images/projects/airline-project.svg',
         demo: '#',
         github: '#',
         featured: true,
@@ -32,7 +32,7 @@ const projectsData = [
         category: 'JavaScript',
         tags: ['HTML', 'CSS', 'JavaScript'],
         description: 'A modern hotel management system with room listing, booking, guest information, check-in/out, and pricing display built with HTML, CSS, and JavaScript.',
-        image: 'images/projects/hotel-project.jpg',
+        image: 'images/projects/hotel-project.svg',
         demo: '#',
         github: '#',
         featured: true,
@@ -51,7 +51,7 @@ const projectsData = [
         category: 'Web Design',
         tags: ['HTML', 'CSS', 'JavaScript'],
         description: 'A modern personal portfolio website with responsive design, smooth animations, and interactive elements.',
-        image: 'images/projects/portfolio-project.jpg',
+        image: 'images/projects/portfolio-project.svg',
         demo: '#',
         github: '#',
         featured: false,
@@ -68,7 +68,7 @@ const projectsData = [
         category: 'Web Design',
         tags: ['HTML', 'CSS'],
         description: 'A modern restaurant website with menu display, online ordering, and reservation system.',
-        image: 'images/projects/restaurant-project.jpg',
+        image: 'images/projects/restaurant-project.svg',
         demo: '#',
         github: '#',
         featured: false,
@@ -85,7 +85,7 @@ const projectsData = [
         category: 'JavaScript',
         tags: ['HTML', 'CSS', 'JavaScript'],
         description: 'A fully responsive e-commerce website with product listing, cart functionality, and checkout process.',
-        image: 'images/projects/ecommerce-project.jpg',
+        image: 'images/projects/ecommerce-project.svg',
         demo: '#',
         github: '#',
         featured: false,
@@ -102,7 +102,7 @@ const projectsData = [
         category: 'JavaScript',
         tags: ['HTML', 'CSS', 'JavaScript'],
         description: 'An interactive to-do list application with task management, filtering, and local storage.',
-        image: 'images/projects/todo-project.jpg',
+        image: 'images/projects/todo-project.svg',
         demo: '#',
         github: '#',
         featured: false,
@@ -119,7 +119,7 @@ const projectsData = [
         category: 'JavaScript',
         tags: ['HTML', 'CSS', 'JavaScript'],
         description: 'A weather website that displays current weather and forecasts using a weather API.',
-        image: 'images/projects/weather-project.jpg',
+        image: 'images/projects/weather-project.svg',
         demo: '#',
         github: '#',
         featured: false,
@@ -136,7 +136,7 @@ const projectsData = [
         category: 'Web Design',
         tags: ['HTML', 'CSS'],
         description: 'A modern landing page with hero section, features, testimonials, and call-to-action.',
-        image: 'images/projects/landing-project.jpg',
+        image: 'images/projects/landing-project.svg',
         demo: '#',
         github: '#',
         featured: false,
@@ -153,7 +153,7 @@ const projectsData = [
         category: 'Python',
         tags: ['Python'],
         description: 'A collection of Python automation scripts for file management, data processing, web scraping, and task automation to improve productivity.',
-        image: 'images/projects/python-project.jpg',
+        image: 'images/projects/python-project.svg',
         demo: '#',
         github: '#',
         featured: true,
@@ -266,6 +266,8 @@ function initProjectModal() {
             const modalImage = modal.querySelector('.project-modal-image img');
             const modalDemo = modal.querySelector('.project-modal-demo');
             const modalGithub = modal.querySelector('.project-modal-github');
+            const modalTechList = modal.querySelector('.project-tech-list');
+            const modalFeaturesList = modal.querySelector('.project-features-list');
 
             if (modalTitle) modalTitle.textContent = project.title;
             if (modalDescription) modalDescription.textContent = project.description;
@@ -275,6 +277,31 @@ function initProjectModal() {
             }
             if (modalDemo) modalDemo.href = project.demo;
             if (modalGithub) modalGithub.href = project.github;
+
+            // Populate technologies
+            if (modalTechList && project.tags) {
+                modalTechList.innerHTML = '';
+                project.tags.forEach(tag => {
+                    const span = document.createElement('span');
+                    span.className = 'badge badge-primary';
+                    span.textContent = tag;
+                    modalTechList.appendChild(span);
+                });
+            }
+
+            // Populate features
+            if (modalFeaturesList && project.features) {
+                modalFeaturesList.innerHTML = '';
+                project.features.forEach(feature => {
+                    const li = document.createElement('li');
+                    li.style.display = 'flex';
+                    li.style.alignItems = 'center';
+                    li.style.gap = 'var(--spacing-sm)';
+                    li.style.color = 'var(--clr-text-light)';
+                    li.innerHTML = '<i class="fas fa-check" style="color: var(--clr-primary);"></i> ' + feature;
+                    modalFeaturesList.appendChild(li);
+                });
+            }
 
             // Show modal
             modal.classList.add('active');
