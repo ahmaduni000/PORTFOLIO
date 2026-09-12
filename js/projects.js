@@ -15,7 +15,7 @@ const projectsData = [
         description: 'A comprehensive airline reservation system with flight search, booking, seat selection, and passenger management using HTML, CSS, and vanilla JavaScript.',
         image: 'images/projects/airline-project.svg',
         demo: '#',
-        github: '#',
+        github: 'https://github.com/ahmaduni000',
         featured: true,
         features: [
             'Flight search and booking',
@@ -34,7 +34,7 @@ const projectsData = [
         description: 'A modern hotel management system with room listing, booking, guest information, check-in/out, and pricing display built with HTML, CSS, and JavaScript.',
         image: 'images/projects/hotel-project.svg',
         demo: '#',
-        github: '#',
+        github: 'https://github.com/ahmaduni000',
         featured: true,
         features: [
             'Room listing and categories',
@@ -53,7 +53,7 @@ const projectsData = [
         description: 'A modern personal portfolio website with responsive design, smooth animations, and interactive elements.',
         image: 'images/projects/portfolio-project.svg',
         demo: '#',
-        github: '#',
+        github: 'https://github.com/ahmaduni000',
         featured: false,
         features: [
             'Responsive layout',
@@ -70,7 +70,7 @@ const projectsData = [
         description: 'A modern restaurant website with menu display, online ordering, and reservation system.',
         image: 'images/projects/restaurant-project.svg',
         demo: '#',
-        github: '#',
+        github: 'https://github.com/ahmaduni000',
         featured: false,
         features: [
             'Menu display',
@@ -87,7 +87,7 @@ const projectsData = [
         description: 'A fully responsive e-commerce website with product listing, cart functionality, and checkout process.',
         image: 'images/projects/ecommerce-project.svg',
         demo: '#',
-        github: '#',
+        github: 'https://github.com/ahmaduni000',
         featured: false,
         features: [
             'Product listing',
@@ -104,7 +104,7 @@ const projectsData = [
         description: 'An interactive to-do list application with task management, filtering, and local storage.',
         image: 'images/projects/todo-project.svg',
         demo: '#',
-        github: '#',
+        github: 'https://github.com/ahmaduni000',
         featured: false,
         features: [
             'Task creation and deletion',
@@ -121,7 +121,7 @@ const projectsData = [
         description: 'A weather website that displays current weather and forecasts using a weather API.',
         image: 'images/projects/weather-project.svg',
         demo: '#',
-        github: '#',
+        github: 'https://github.com/ahmaduni000',
         featured: false,
         features: [
             'Current weather display',
@@ -138,7 +138,7 @@ const projectsData = [
         description: 'A modern landing page with hero section, features, testimonials, and call-to-action.',
         image: 'images/projects/landing-project.svg',
         demo: '#',
-        github: '#',
+        github: 'https://github.com/ahmaduni000',
         featured: false,
         features: [
             'Hero section',
@@ -155,7 +155,7 @@ const projectsData = [
         description: 'A collection of Python automation scripts for file management, data processing, web scraping, and task automation to improve productivity.',
         image: 'images/projects/python-project.svg',
         demo: '#',
-        github: '#',
+        github: 'https://github.com/ahmaduni000',
         featured: true,
         features: [
             'File organization and management',

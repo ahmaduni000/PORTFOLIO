@@ -579,6 +579,11 @@
         justify-content: center;
         flex-wrap: wrap;
     }
+
+    /* Contact form fields stack in a single balanced column on mobile */
+    .form-grid {
+        grid-template-columns: 1fr !important;
+    }
 }
 
 /* ==========================================================================
@@ -759,6 +764,7 @@
         opacity: 0;
         transform: translateY(30px) scale(0.95);
     }
+
     to {
         opacity: 1;
         transform: translateY(0) scale(1);
