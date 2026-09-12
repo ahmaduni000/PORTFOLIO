@@ -902,6 +902,14 @@ li {
     background: #125dc7;
 }
 
+.footer-social-btn-github {
+    background: #333;
+}
+
+.footer-social-btn-github:hover {
+    background: #1a1a1a;
+}
+
 /* Footer Newsletter */
 .footer-newsletter {
     width: 100%;
