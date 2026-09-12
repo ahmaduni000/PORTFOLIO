@@ -4,13 +4,13 @@
     <!-- Required Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ahmed Ali - Skills. HTML, CSS, JavaScript, Python, Flask, SQLite, MySQL, PostgreSQL, AI, Responsive Design, UI Design, Frontend Development skills with progress indicators.">
+    <meta name="description" content="Ahmed Ali - Skills. HTML, CSS, JavaScript, Python, Flask, SQLite, MySQL, PostgreSQL, AI, Responsive Design, UI Design, Full Stack Development skills with progress indicators.">
     <meta name="keywords" content="Ahmed Ali, Skills, HTML, CSS, JavaScript, Python, Flask, SQLite, MySQL, PostgreSQL, AI, Responsive Design, UI Design, Frontend Development, Skill Progress">
     <meta name="author" content="Ahmed Ali">
 
     <!-- Open Graph / Social Media -->
-    <meta property="og:title" content="Skills - Ahmed Ali Frontend Developer & Web Designer">
-    <meta property="og:description" content="My technical skills including HTML, CSS, JavaScript, Python, Flask, SQLite, MySQL, PostgreSQL, AI, Responsive Design, UI Design, and Frontend Development.">
+    <meta property="og:title" content="Skills - Ahmed Ali AI Engineer, Prompt Engineer & Full Stack Web Developer">
+    <meta property="og:description" content="My technical skills including HTML, CSS, JavaScript, Python, Flask, SQLite, MySQL, PostgreSQL, AI, Responsive Design, UI Design, and Full Stack Development.">
     <meta property="og:image" content="images/profile/profile-photo.svg">
     <meta property="og:url" content="https://ahmed-ali-portfolio.com/skills.html">
     <meta property="og:type" content="website">
@@ -37,101 +37,40 @@
     <link rel="stylesheet" href="css/animations.css">
     <link rel="stylesheet" href="css/responsive.css">
 
-    <title>Skills - Ahmed Ali Frontend Developer & Web Designer</title>
+    <title>Skills - Ahmed Ali AI Engineer, Prompt Engineer & Full Stack Web Developer</title>
 </head>
 <body>
 
-    <!-- Loading Screen - Premium Enhanced -->
-    <div class="loader">
-        <!-- Scan line overlay -->
-        <div class="loader-scanline"></div>
-        
-        <!-- Animated gradient orbs -->
-        <div class="loader-orb loader-orb-1"></div>
-        <div class="loader-orb loader-orb-2"></div>
-        <div class="loader-orb loader-orb-3"></div>
-        
-        <!-- Floating particles -->
-        <div class="loader-particles">
-            <div class="loader-particle"></div>
-            <div class="loader-particle"></div>
-            <div class="loader-particle"></div>
-            <div class="loader-particle"></div>
-            <div class="loader-particle"></div>
-            <div class="loader-particle"></div>
-            <div class="loader-particle"></div>
-            <div class="loader-particle"></div>
-            <div class="loader-particle"></div>
-            <div class="loader-particle"></div>
-            <div class="loader-particle"></div>
-            <div class="loader-particle"></div>
-        </div>
-        
-        <!-- Pulse rings around spinner -->
-        <div class="loader-pulse-ring"></div>
-        <div class="loader-pulse-ring"></div>
-        
-        <!-- Glow ring behind logo -->
-        <div class="loader-glow"></div>
-        
-        <div class="loader-content">
-            <!-- Animated icon -->
-            <div class="loader-icon">
-                <i class="fas fa-bolt"></i>
-            </div>
-            
-            <div class="loader-logo">
-                MA<span class="loader-logo-dot">.</span>Corp
-            </div>
-            
-            <!-- Circular SVG progress ring -->
-            <div class="loader-ring-container">
-                <svg class="loader-ring-svg" viewBox="0 0 120 120">
-                    <defs>
-                        <linearGradient id="loader-ring-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                            <stop offset="0%" stop-color="#0ea5e9" />
-                            <stop offset="50%" stop-color="#8b5cf6" />
-                            <stop offset="100%" stop-color="#06b6d4" />
-                        </linearGradient>
-                    </defs>
-                    <circle class="loader-ring-bg" cx="60" cy="60" r="54" />
-                    <circle class="loader-ring-progress" id="loader-ring-progress" cx="60" cy="60" r="54" />
-                </svg>
-                <div class="loader-spinner">
-                    <div class="loader-spinner-ring"></div>
-                    <div class="loader-spinner-ring"></div>
-                    <div class="loader-spinner-ring"></div>
+        <!-- Loading Screen -->
+        <div class="loader-container" id="loader-container">
+            <div class="loader-content">
+                <div class="loader-logo">
                 </div>
+                <div class="loader-progress">
+                    <div class="loader-progress-bar" id="loader-progress-bar"></div>
+                </div>
+                <div class="loader-percentage" id="loader-percentage">0%</div>
+                <div class="loader-text">Loading...</div>
             </div>
-            
-            <div class="loader-tagline">Loading Amazing Experience</div>
-            
-            <div class="loader-progress-container">
-                <div class="loader-progress-bar"></div>
-            </div>
-            
-            <div class="loader-percent" id="loader-percent">0%</div>
-            
-            <div class="loader-stage" id="loader-stage">Initializing...</div>
         </div>
-    </div>
 
-    <!-- Custom Cursor -->
-    <div class="cursor"></div>
-
-    <!-- Scroll Progress -->
-    <div class="scroll-progress"></div>
-
-    <!-- Back to Top -->
-    <button class="back-to-top">
-        <i class="fas fa-arrow-up"></i>
-    </button>
-
-    <!-- Navbar -->
+        <!-- Custom Cursor -->
+        <div class="cursor"></div>
+    
+        <!-- Scroll Progress -->
+        <div class="scroll-progress"></div>
+    
+        <!-- Back to Top -->
+        <button class="back-to-top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    
+        <!-- Navbar -->
     <nav class="navbar">
         <div class="container navbar-container">
             <a href="index.html" class="navbar-brand">
                 <span class="logo-text">Ahmed Ali</span>
+                <span class="logo-tagline">AI Engineer | Prompt Engineer | Full Stack Web Developer</span>
             </a>
 
             <div class="navbar-nav">
@@ -179,120 +118,120 @@
                     <div class="progress-container" style="margin-bottom: var(--spacing-xl);">
                         <div class="progress-header" style="display: flex; justify-content: space-between; margin-bottom: var(--spacing-sm);">
                             <span class="progress-label" style="font-weight: 600; color: var(--clr-dark);">HTML</span>
-                            <span class="progress-percent" style="font-weight: 600; color: var(--clr-primary);">95%</span>
+                            <span class="progress-percent"></span>
                         </div>
                         <div class="progress-bar-container" style="background: var(--clr-light-gray); border-radius: var(--radius-full); height: 12px; overflow: hidden;">
-                            <div class="progress-bar skill-progress" data-percent="95" style="width: 0; height: 100%; border-radius: var(--radius-full); background: var(--clr-primary-gradient); transition: width 1.5s ease;"></div>
+                            <div class="progress-bar skill-progress" data-percent="100" style="width: 0; height: 100%; border-radius: var(--radius-full); background: var(--clr-primary-gradient); transition: width 1.5s ease;"></div>
                         </div>
                     </div>
 
                     <div class="progress-container" style="margin-bottom: var(--spacing-xl);">
                         <div class="progress-header" style="display: flex; justify-content: space-between; margin-bottom: var(--spacing-sm);">
                             <span class="progress-label" style="font-weight: 600; color: var(--clr-dark);">CSS</span>
-                            <span class="progress-percent" style="font-weight: 600; color: var(--clr-primary);">90%</span>
+                            <span class="progress-percent"></span>
                         </div>
                         <div class="progress-bar-container" style="background: var(--clr-light-gray); border-radius: var(--radius-full); height: 12px; overflow: hidden;">
-                            <div class="progress-bar skill-progress" data-percent="90" style="width: 0; height: 100%; border-radius: var(--radius-full); background: var(--clr-primary-gradient); transition: width 1.5s ease;"></div>
+                            <div class="progress-bar skill-progress" data-percent="100" style="width: 0; height: 100%; border-radius: var(--radius-full); background: var(--clr-primary-gradient); transition: width 1.5s ease;"></div>
                         </div>
                     </div>
 
                     <div class="progress-container" style="margin-bottom: var(--spacing-xl);">
                         <div class="progress-header" style="display: flex; justify-content: space-between; margin-bottom: var(--spacing-sm);">
                             <span class="progress-label" style="font-weight: 600; color: var(--clr-dark);">JavaScript</span>
-                            <span class="progress-percent" style="font-weight: 600; color: var(--clr-primary);">85%</span>
+                            <span class="progress-percent"></span>
                         </div>
                         <div class="progress-bar-container" style="background: var(--clr-light-gray); border-radius: var(--radius-full); height: 12px; overflow: hidden;">
-                            <div class="progress-bar skill-progress" data-percent="85" style="width: 0; height: 100%; border-radius: var(--radius-full); background: var(--clr-primary-gradient); transition: width 1.5s ease;"></div>
+                            <div class="progress-bar skill-progress" data-percent="100" style="width: 0; height: 100%; border-radius: var(--radius-full); background: var(--clr-primary-gradient); transition: width 1.5s ease;"></div>
                         </div>
                     </div>
 
                     <div class="progress-container" style="margin-bottom: var(--spacing-xl);">
                         <div class="progress-header" style="display: flex; justify-content: space-between; margin-bottom: var(--spacing-sm);">
                             <span class="progress-label" style="font-weight: 600; color: var(--clr-dark);">Responsive Design</span>
-                            <span class="progress-percent" style="font-weight: 600; color: var(--clr-primary);">90%</span>
+                            <span class="progress-percent"></span>
                         </div>
                         <div class="progress-bar-container" style="background: var(--clr-light-gray); border-radius: var(--radius-full); height: 12px; overflow: hidden;">
-                            <div class="progress-bar skill-progress" data-percent="90" style="width: 0; height: 100%; border-radius: var(--radius-full); background: var(--clr-primary-gradient); transition: width 1.5s ease;"></div>
+                            <div class="progress-bar skill-progress" data-percent="100" style="width: 0; height: 100%; border-radius: var(--radius-full); background: var(--clr-primary-gradient); transition: width 1.5s ease;"></div>
                         </div>
                     </div>
 
                     <div class="progress-container" style="margin-bottom: var(--spacing-xl);">
                         <div class="progress-header" style="display: flex; justify-content: space-between; margin-bottom: var(--spacing-sm);">
                             <span class="progress-label" style="font-weight: 600; color: var(--clr-dark);">UI Design</span>
-                            <span class="progress-percent" style="font-weight: 600; color: var(--clr-primary);">85%</span>
+                            <span class="progress-percent"></span>
                         </div>
                         <div class="progress-bar-container" style="background: var(--clr-light-gray); border-radius: var(--radius-full); height: 12px; overflow: hidden;">
-                            <div class="progress-bar skill-progress" data-percent="85" style="width: 0; height: 100%; border-radius: var(--radius-full); background: var(--clr-primary-gradient); transition: width 1.5s ease;"></div>
+                            <div class="progress-bar skill-progress" data-percent="100" style="width: 0; height: 100%; border-radius: var(--radius-full); background: var(--clr-primary-gradient); transition: width 1.5s ease;"></div>
                         </div>
                     </div>
 
                     <div class="progress-container" style="margin-bottom: var(--spacing-xl);">
                         <div class="progress-header" style="display: flex; justify-content: space-between; margin-bottom: var(--spacing-sm);">
                             <span class="progress-label" style="font-weight: 600; color: var(--clr-dark);">Frontend Development</span>
-                            <span class="progress-percent" style="font-weight: 600; color: var(--clr-primary);">85%</span>
+                            <span class="progress-percent"></span>
                         </div>
                         <div class="progress-bar-container" style="background: var(--clr-light-gray); border-radius: var(--radius-full); height: 12px; overflow: hidden;">
-                            <div class="progress-bar skill-progress" data-percent="85" style="width: 0; height: 100%; border-radius: var(--radius-full); background: var(--clr-primary-gradient); transition: width 1.5s ease;"></div>
+                            <div class="progress-bar skill-progress" data-percent="100" style="width: 0; height: 100%; border-radius: var(--radius-full); background: var(--clr-primary-gradient); transition: width 1.5s ease;"></div>
                         </div>
                     </div>
 
                     <div class="progress-container" style="margin-bottom: var(--spacing-xl);">
                         <div class="progress-header" style="display: flex; justify-content: space-between; margin-bottom: var(--spacing-sm);">
                             <span class="progress-label" style="font-weight: 600; color: var(--clr-dark);">Python</span>
-                            <span class="progress-percent" style="font-weight: 600; color: var(--clr-primary);">80%</span>
+                            <span class="progress-percent"></span>
                         </div>
                         <div class="progress-bar-container" style="background: var(--clr-light-gray); border-radius: var(--radius-full); height: 12px; overflow: hidden;">
-                            <div class="progress-bar skill-progress" data-percent="80" style="width: 0; height: 100%; border-radius: var(--radius-full); background: var(--clr-primary-gradient); transition: width 1.5s ease;"></div>
+                            <div class="progress-bar skill-progress" data-percent="100" style="width: 0; height: 100%; border-radius: var(--radius-full); background: var(--clr-primary-gradient); transition: width 1.5s ease;"></div>
                         </div>
                     </div>
 
                     <div class="progress-container" style="margin-bottom: var(--spacing-xl);">
                         <div class="progress-header" style="display: flex; justify-content: space-between; margin-bottom: var(--spacing-sm);">
                             <span class="progress-label" style="font-weight: 600; color: var(--clr-dark);">Flask</span>
-                            <span class="progress-percent" style="font-weight: 600; color: var(--clr-primary);">75%</span>
+                            <span class="progress-percent"></span>
                         </div>
                         <div class="progress-bar-container" style="background: var(--clr-light-gray); border-radius: var(--radius-full); height: 12px; overflow: hidden;">
-                            <div class="progress-bar skill-progress" data-percent="75" style="width: 0; height: 100%; border-radius: var(--radius-full); background: var(--clr-primary-gradient); transition: width 1.5s ease;"></div>
+                            <div class="progress-bar skill-progress" data-percent="100" style="width: 0; height: 100%; border-radius: var(--radius-full); background: var(--clr-primary-gradient); transition: width 1.5s ease;"></div>
                         </div>
                     </div>
 
                     <div class="progress-container" style="margin-bottom: var(--spacing-xl);">
                         <div class="progress-header" style="display: flex; justify-content: space-between; margin-bottom: var(--spacing-sm);">
                             <span class="progress-label" style="font-weight: 600; color: var(--clr-dark);">SQLite</span>
-                            <span class="progress-percent" style="font-weight: 600; color: var(--clr-primary);">70%</span>
+                            <span class="progress-percent"></span>
                         </div>
                         <div class="progress-bar-container" style="background: var(--clr-light-gray); border-radius: var(--radius-full); height: 12px; overflow: hidden;">
-                            <div class="progress-bar skill-progress" data-percent="70" style="width: 0; height: 100%; border-radius: var(--radius-full); background: var(--clr-primary-gradient); transition: width 1.5s ease;"></div>
+                            <div class="progress-bar skill-progress" data-percent="100" style="width: 0; height: 100%; border-radius: var(--radius-full); background: var(--clr-primary-gradient); transition: width 1.5s ease;"></div>
                         </div>
                     </div>
 
                     <div class="progress-container" style="margin-bottom: var(--spacing-xl);">
                         <div class="progress-header" style="display: flex; justify-content: space-between; margin-bottom: var(--spacing-sm);">
                             <span class="progress-label" style="font-weight: 600; color: var(--clr-dark);">MySQL</span>
-                            <span class="progress-percent" style="font-weight: 600; color: var(--clr-primary);">70%</span>
+                            <span class="progress-percent"></span>
                         </div>
                         <div class="progress-bar-container" style="background: var(--clr-light-gray); border-radius: var(--radius-full); height: 12px; overflow: hidden;">
-                            <div class="progress-bar skill-progress" data-percent="70" style="width: 0; height: 100%; border-radius: var(--radius-full); background: var(--clr-primary-gradient); transition: width 1.5s ease;"></div>
+                            <div class="progress-bar skill-progress" data-percent="100" style="width: 0; height: 100%; border-radius: var(--radius-full); background: var(--clr-primary-gradient); transition: width 1.5s ease;"></div>
                         </div>
                     </div>
 
                     <div class="progress-container" style="margin-bottom: var(--spacing-xl);">
                         <div class="progress-header" style="display: flex; justify-content: space-between; margin-bottom: var(--spacing-sm);">
                             <span class="progress-label" style="font-weight: 600; color: var(--clr-dark);">PostgreSQL</span>
-                            <span class="progress-percent" style="font-weight: 600; color: var(--clr-primary);">65%</span>
+                            <span class="progress-percent"></span>
                         </div>
                         <div class="progress-bar-container" style="background: var(--clr-light-gray); border-radius: var(--radius-full); height: 12px; overflow: hidden;">
-                            <div class="progress-bar skill-progress" data-percent="65" style="width: 0; height: 100%; border-radius: var(--radius-full); background: var(--clr-primary-gradient); transition: width 1.5s ease;"></div>
+                            <div class="progress-bar skill-progress" data-percent="100" style="width: 0; height: 100%; border-radius: var(--radius-full); background: var(--clr-primary-gradient); transition: width 1.5s ease;"></div>
                         </div>
                     </div>
 
                     <div class="progress-container" style="margin-bottom: var(--spacing-xl);">
                         <div class="progress-header" style="display: flex; justify-content: space-between; margin-bottom: var(--spacing-sm);">
                             <span class="progress-label" style="font-weight: 600; color: var(--clr-dark);">AI Projects</span>
-                            <span class="progress-percent" style="font-weight: 600; color: var(--clr-primary);">70%</span>
+                            <span class="progress-percent"></span>
                         </div>
                         <div class="progress-bar-container" style="background: var(--clr-light-gray); border-radius: var(--radius-full); height: 12px; overflow: hidden;">
-                            <div class="progress-bar skill-progress" data-percent="70" style="width: 0; height: 100%; border-radius: var(--radius-full); background: var(--clr-primary-gradient); transition: width 1.5s ease;"></div>
+                            <div class="progress-bar skill-progress" data-percent="100" style="width: 0; height: 100%; border-radius: var(--radius-full); background: var(--clr-primary-gradient); transition: width 1.5s ease;"></div>
                         </div>
                     </div>
                 </div>
@@ -301,140 +240,140 @@
                 <div class="circular-skills" data-animate="fadeInRight">
                     <div class="grid" style="grid-template-columns: repeat(3, 1fr); gap: var(--spacing-xl);">
                         <!-- HTML -->
-                        <div class="circular-progress card text-center" data-percent="95">
+                        <div class="circular-progress card text-center" data-percent="100">
                             <div style="position: relative; width: 120px; height: 120px; margin: 0 auto;">
                                 <svg viewBox="0 0 120 120" style="width: 100%; height: 100%;">
                                     <circle cx="60" cy="60" r="54" fill="none" stroke="var(--clr-light-gray)" stroke-width="8" style="stroke-linecap: round;"></circle>
                                     <circle cx="60" cy="60" r="54" fill="none" stroke="var(--clr-primary)" stroke-width="8" stroke-dasharray="339.292" stroke-dashoffset="339.292" style="stroke-linecap: round; transition: stroke-dashoffset 1.5s ease;"></circle>
                                 </svg>
                                 <div class="progress-label" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center;">
-                                    <div style="font-size: 1.5rem; font-weight: 700; color: var(--clr-primary);">95%</div>
+                                    <div style="font-size: 1.5rem; font-weight: 700; color: var(--clr-primary);"></div>
                                     <div style="font-size: var(--font-size-sm); color: var(--clr-text-muted);">HTML</div>
                                 </div>
                             </div>
                         </div>
 
                         <!-- CSS -->
-                        <div class="circular-progress card text-center" data-percent="90">
+                        <div class="circular-progress card text-center" data-percent="100">
                             <div style="position: relative; width: 120px; height: 120px; margin: 0 auto;">
                                 <svg viewBox="0 0 120 120" style="width: 100%; height: 100%;">
                                     <circle cx="60" cy="60" r="54" fill="none" stroke="var(--clr-light-gray)" stroke-width="8" style="stroke-linecap: round;"></circle>
                                     <circle cx="60" cy="60" r="54" fill="none" stroke="var(--clr-primary)" stroke-width="8" stroke-dasharray="339.292" stroke-dashoffset="339.292" style="stroke-linecap: round; transition: stroke-dashoffset 1.5s ease;"></circle>
                                 </svg>
                                 <div class="progress-label" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center;">
-                                    <div style="font-size: 1.5rem; font-weight: 700; color: var(--clr-primary);">90%</div>
+                                    <div style="font-size: 1.5rem; font-weight: 700; color: var(--clr-primary);"></div>
                                     <div style="font-size: var(--font-size-sm); color: var(--clr-text-muted);">CSS</div>
                                 </div>
                             </div>
                         </div>
 
                         <!-- JavaScript -->
-                        <div class="circular-progress card text-center" data-percent="85">
+                        <div class="circular-progress card text-center" data-percent="100">
                             <div style="position: relative; width: 120px; height: 120px; margin: 0 auto;">
                                 <svg viewBox="0 0 120 120" style="width: 100%; height: 100%;">
                                     <circle cx="60" cy="60" r="54" fill="none" stroke="var(--clr-light-gray)" stroke-width="8" style="stroke-linecap: round;"></circle>
                                     <circle cx="60" cy="60" r="54" fill="none" stroke="var(--clr-primary)" stroke-width="8" stroke-dasharray="339.292" stroke-dashoffset="339.292" style="stroke-linecap: round; transition: stroke-dashoffset 1.5s ease;"></circle>
                                 </svg>
                                 <div class="progress-label" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center;">
-                                    <div style="font-size: 1.5rem; font-weight: 700; color: var(--clr-primary);">85%</div>
+                                    <div style="font-size: 1.5rem; font-weight: 700; color: var(--clr-primary);"></div>
                                     <div style="font-size: var(--font-size-sm); color: var(--clr-text-muted);">JavaScript</div>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Responsive Design -->
-                        <div class="circular-progress card text-center" data-percent="90">
+                        <div class="circular-progress card text-center" data-percent="100">
                             <div style="position: relative; width: 120px; height: 120px; margin: 0 auto;">
                                 <svg viewBox="0 0 120 120" style="width: 100%; height: 100%;">
                                     <circle cx="60" cy="60" r="54" fill="none" stroke="var(--clr-light-gray)" stroke-width="8" style="stroke-linecap: round;"></circle>
                                     <circle cx="60" cy="60" r="54" fill="none" stroke="var(--clr-primary)" stroke-width="8" stroke-dasharray="339.292" stroke-dashoffset="339.292" style="stroke-linecap: round; transition: stroke-dashoffset 1.5s ease;"></circle>
                                 </svg>
                                 <div class="progress-label" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center;">
-                                    <div style="font-size: 1.5rem; font-weight: 700; color: var(--clr-primary);">90%</div>
+                                    <div style="font-size: 1.5rem; font-weight: 700; color: var(--clr-primary);"></div>
                                     <div style="font-size: var(--font-size-sm); color: var(--clr-text-muted);">Responsive</div>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Python -->
-                        <div class="circular-progress card text-center" data-percent="80">
+                        <div class="circular-progress card text-center" data-percent="100">
                             <div style="position: relative; width: 120px; height: 120px; margin: 0 auto;">
                                 <svg viewBox="0 0 120 120" style="width: 100%; height: 100%;">
                                     <circle cx="60" cy="60" r="54" fill="none" stroke="var(--clr-light-gray)" stroke-width="8" style="stroke-linecap: round;"></circle>
                                     <circle cx="60" cy="60" r="54" fill="none" stroke="var(--clr-primary)" stroke-width="8" stroke-dasharray="339.292" stroke-dashoffset="339.292" style="stroke-linecap: round; transition: stroke-dashoffset 1.5s ease;"></circle>
                                 </svg>
                                 <div class="progress-label" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center;">
-                                    <div style="font-size: 1.5rem; font-weight: 700; color: var(--clr-primary);">80%</div>
+                                    <div style="font-size: 1.5rem; font-weight: 700; color: var(--clr-primary);"></div>
                                     <div style="font-size: var(--font-size-sm); color: var(--clr-text-muted);">Python</div>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Flask -->
-                        <div class="circular-progress card text-center" data-percent="75">
+                        <div class="circular-progress card text-center" data-percent="100">
                             <div style="position: relative; width: 120px; height: 120px; margin: 0 auto;">
                                 <svg viewBox="0 0 120 120" style="width: 100%; height: 100%;">
                                     <circle cx="60" cy="60" r="54" fill="none" stroke="var(--clr-light-gray)" stroke-width="8" style="stroke-linecap: round;"></circle>
                                     <circle cx="60" cy="60" r="54" fill="none" stroke="var(--clr-primary)" stroke-width="8" stroke-dasharray="339.292" stroke-dashoffset="339.292" style="stroke-linecap: round; transition: stroke-dashoffset 1.5s ease;"></circle>
                                 </svg>
                                 <div class="progress-label" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center;">
-                                    <div style="font-size: 1.5rem; font-weight: 700; color: var(--clr-primary);">75%</div>
+                                    <div style="font-size: 1.5rem; font-weight: 700; color: var(--clr-primary);"></div>
                                     <div style="font-size: var(--font-size-sm); color: var(--clr-text-muted);">Flask</div>
                                 </div>
                             </div>
                         </div>
 
                         <!-- SQLite -->
-                        <div class="circular-progress card text-center" data-percent="70">
+                        <div class="circular-progress card text-center" data-percent="100">
                             <div style="position: relative; width: 120px; height: 120px; margin: 0 auto;">
                                 <svg viewBox="0 0 120 120" style="width: 100%; height: 100%;">
                                     <circle cx="60" cy="60" r="54" fill="none" stroke="var(--clr-light-gray)" stroke-width="8" style="stroke-linecap: round;"></circle>
                                     <circle cx="60" cy="60" r="54" fill="none" stroke="var(--clr-primary)" stroke-width="8" stroke-dasharray="339.292" stroke-dashoffset="339.292" style="stroke-linecap: round; transition: stroke-dashoffset 1.5s ease;"></circle>
                                 </svg>
                                 <div class="progress-label" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center;">
-                                    <div style="font-size: 1.5rem; font-weight: 700; color: var(--clr-primary);">70%</div>
+                                    <div style="font-size: 1.5rem; font-weight: 700; color: var(--clr-primary);"></div>
                                     <div style="font-size: var(--font-size-sm); color: var(--clr-text-muted);">SQLite</div>
                                 </div>
                             </div>
                         </div>
 
                         <!-- MySQL -->
-                        <div class="circular-progress card text-center" data-percent="70">
+                        <div class="circular-progress card text-center" data-percent="100">
                             <div style="position: relative; width: 120px; height: 120px; margin: 0 auto;">
                                 <svg viewBox="0 0 120 120" style="width: 100%; height: 100%;">
                                     <circle cx="60" cy="60" r="54" fill="none" stroke="var(--clr-light-gray)" stroke-width="8" style="stroke-linecap: round;"></circle>
                                     <circle cx="60" cy="60" r="54" fill="none" stroke="var(--clr-primary)" stroke-width="8" stroke-dasharray="339.292" stroke-dashoffset="339.292" style="stroke-linecap: round; transition: stroke-dashoffset 1.5s ease;"></circle>
                                 </svg>
                                 <div class="progress-label" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center;">
-                                    <div style="font-size: 1.5rem; font-weight: 700; color: var(--clr-primary);">70%</div>
+                                    <div style="font-size: 1.5rem; font-weight: 700; color: var(--clr-primary);"></div>
                                     <div style="font-size: var(--font-size-sm); color: var(--clr-text-muted);">MySQL</div>
                                 </div>
                             </div>
                         </div>
 
                         <!-- PostgreSQL -->
-                        <div class="circular-progress card text-center" data-percent="65">
+                        <div class="circular-progress card text-center" data-percent="100">
                             <div style="position: relative; width: 120px; height: 120px; margin: 0 auto;">
                                 <svg viewBox="0 0 120 120" style="width: 100%; height: 100%;">
                                     <circle cx="60" cy="60" r="54" fill="none" stroke="var(--clr-light-gray)" stroke-width="8" style="stroke-linecap: round;"></circle>
                                     <circle cx="60" cy="60" r="54" fill="none" stroke="var(--clr-primary)" stroke-width="8" stroke-dasharray="339.292" stroke-dashoffset="339.292" style="stroke-linecap: round; transition: stroke-dashoffset 1.5s ease;"></circle>
                                 </svg>
                                 <div class="progress-label" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center;">
-                                    <div style="font-size: 1.5rem; font-weight: 700; color: var(--clr-primary);">65%</div>
+                                    <div style="font-size: 1.5rem; font-weight: 700; color: var(--clr-primary);"></div>
                                     <div style="font-size: var(--font-size-sm); color: var(--clr-text-muted);">PostgreSQL</div>
                                 </div>
                             </div>
                         </div>
 
                         <!-- AI Projects -->
-                        <div class="circular-progress card text-center" data-percent="70">
+                        <div class="circular-progress card text-center" data-percent="100">
                             <div style="position: relative; width: 120px; height: 120px; margin: 0 auto;">
                                 <svg viewBox="0 0 120 120" style="width: 100%; height: 100%;">
                                     <circle cx="60" cy="60" r="54" fill="none" stroke="var(--clr-light-gray)" stroke-width="8" style="stroke-linecap: round;"></circle>
                                     <circle cx="60" cy="60" r="54" fill="none" stroke="var(--clr-primary)" stroke-width="8" stroke-dasharray="339.292" stroke-dashoffset="339.292" style="stroke-linecap: round; transition: stroke-dashoffset 1.5s ease;"></circle>
                                 </svg>
                                 <div class="progress-label" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center;">
-                                    <div style="font-size: 1.5rem; font-weight: 700; color: var(--clr-primary);">70%</div>
+                                    <div style="font-size: 1.5rem; font-weight: 700; color: var(--clr-primary);"></div>
                                     <div style="font-size: var(--font-size-sm); color: var(--clr-text-muted);">AI Projects</div>
                                 </div>
                             </div>
@@ -777,9 +716,9 @@
                     </div>
                     <h3 class="card-title">HTML</h3>
                     <div class="skill-progress-container" style="background: var(--clr-light-gray); border-radius: var(--radius-full); height: 8px; margin-top: var(--spacing-md);">
-                        <div class="skill-progress" data-percent="95" style="width: 0; height: 100%; border-radius: var(--radius-full); background: var(--clr-primary-gradient); transition: width 1.5s ease;"></div>
+                        <div class="skill-progress" data-percent="100" style="width: 0; height: 100%; border-radius: var(--radius-full); background: var(--clr-primary-gradient); transition: width 1.5s ease;"></div>
                     </div>
-                    <span class="skill-percent" style="display: block; margin-top: var(--spacing-sm); font-weight: 600;">95%</span>
+                    <span class="skill-percent"></span>
                 </div>
 
                 <!-- Skill 2 -->
@@ -789,9 +728,9 @@
                     </div>
                     <h3 class="card-title">CSS</h3>
                     <div class="skill-progress-container" style="background: var(--clr-light-gray); border-radius: var(--radius-full); height: 8px; margin-top: var(--spacing-md);">
-                        <div class="skill-progress" data-percent="90" style="width: 0; height: 100%; border-radius: var(--radius-full); background: var(--clr-primary-gradient); transition: width 1.5s ease;"></div>
+                        <div class="skill-progress" data-percent="100" style="width: 0; height: 100%; border-radius: var(--radius-full); background: var(--clr-primary-gradient); transition: width 1.5s ease;"></div>
                     </div>
-                    <span class="skill-percent" style="display: block; margin-top: var(--spacing-sm); font-weight: 600;">90%</span>
+                    <span class="skill-percent"></span>
                 </div>
 
                 <!-- Skill 3 -->
@@ -801,9 +740,9 @@
                     </div>
                     <h3 class="card-title">JavaScript</h3>
                     <div class="skill-progress-container" style="background: var(--clr-light-gray); border-radius: var(--radius-full); height: 8px; margin-top: var(--spacing-md);">
-                        <div class="skill-progress" data-percent="85" style="width: 0; height: 100%; border-radius: var(--radius-full); background: var(--clr-primary-gradient); transition: width 1.5s ease;"></div>
+                        <div class="skill-progress" data-percent="100" style="width: 0; height: 100%; border-radius: var(--radius-full); background: var(--clr-primary-gradient); transition: width 1.5s ease;"></div>
                     </div>
-                    <span class="skill-percent" style="display: block; margin-top: var(--spacing-sm); font-weight: 600;">85%</span>
+                    <span class="skill-percent"></span>
                 </div>
 
                 <!-- Skill 4 -->
@@ -813,9 +752,9 @@
                     </div>
                     <h3 class="card-title">Responsive Design</h3>
                     <div class="skill-progress-container" style="background: var(--clr-light-gray); border-radius: var(--radius-full); height: 8px; margin-top: var(--spacing-md);">
-                        <div class="skill-progress" data-percent="90" style="width: 0; height: 100%; border-radius: var(--radius-full); background: var(--clr-primary-gradient); transition: width 1.5s ease;"></div>
+                        <div class="skill-progress" data-percent="100" style="width: 0; height: 100%; border-radius: var(--radius-full); background: var(--clr-primary-gradient); transition: width 1.5s ease;"></div>
                     </div>
-                    <span class="skill-percent" style="display: block; margin-top: var(--spacing-sm); font-weight: 600;">90%</span>
+                    <span class="skill-percent"></span>
                 </div>
             </div>
 
@@ -895,12 +834,11 @@
                 <div class="footer-col">
                     <h3>Services</h3>
                     <ul class="footer-links">
-                        <li><a href="services.html#frontend">Web Design</a></li>
-                        <li><a href="services.html#frontend">Frontend Development</a></li>
-                        <li><a href="services.html#ui-ux">UI/UX Design</a></li>
-                        <li><a href="services.html#javascript">JavaScript Development</a></li>
-                        <li><a href="services.html#python">Python Development</a></li>
-                        <li><a href="services.html#ai">AI Solutions</a></li>
+                        <li><a href="services.html#web-development">Web Development</a></li>
+                        <li><a href="services.html#python-projects">Python Projects</a></li>
+                        <li><a href="services.html#ai-projects">AI Projects</a></li>
+                        <li><a href="services.html#ai-projects">AI Chatbot</a></li>
+                        <li><a href="services.html#automation">Automation</a></li>
                     </ul>
                 </div>
 
@@ -910,7 +848,7 @@
                     <p style="color: var(--clr-text-muted); font-size: var(--font-size-sm); margin-bottom: var(--spacing-lg);">
                         Subscribe to get the latest updates on projects, services, and tech insights.
                     </p>
-                    <form class="footer-newsletter" onsubmit="event.preventDefault(); alert('Thank you for subscribing!');">
+                    <form class="footer-newsletter" action="https://formspree.io/f/xpwzgkpd" method="POST">
                         <div class="footer-newsletter-input-group">
                             <input type="email" placeholder="Your email address" required class="footer-newsletter-input">
                             <button type="submit" class="footer-newsletter-btn">

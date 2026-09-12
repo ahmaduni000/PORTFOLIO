@@ -288,19 +288,7 @@ function initCircularProgress() {
                     }
                 }
 
-                const label = circle.querySelector('.progress-label');
-                if (label) {
-                    let count = 0;
-                    const increment = percent / 50;
-                    const timer = setInterval(() => {
-                        count += increment;
-                        if (count >= percent) {
-                            count = percent;
-                            clearInterval(timer);
-                        }
-                        label.textContent = Math.floor(count) + '%';
-                    }, 30);
-                }
+                // Percentage display removed
 
                 obs.unobserve(circle);
             }

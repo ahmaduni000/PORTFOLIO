@@ -41,97 +41,36 @@
 </head>
 <body>
 
-    <!-- Loading Screen - Premium Enhanced -->
-    <div class="loader">
-        <!-- Scan line overlay -->
-        <div class="loader-scanline"></div>
-        
-        <!-- Animated gradient orbs -->
-        <div class="loader-orb loader-orb-1"></div>
-        <div class="loader-orb loader-orb-2"></div>
-        <div class="loader-orb loader-orb-3"></div>
-        
-        <!-- Floating particles -->
-        <div class="loader-particles">
-            <div class="loader-particle"></div>
-            <div class="loader-particle"></div>
-            <div class="loader-particle"></div>
-            <div class="loader-particle"></div>
-            <div class="loader-particle"></div>
-            <div class="loader-particle"></div>
-            <div class="loader-particle"></div>
-            <div class="loader-particle"></div>
-            <div class="loader-particle"></div>
-            <div class="loader-particle"></div>
-            <div class="loader-particle"></div>
-            <div class="loader-particle"></div>
-        </div>
-        
-        <!-- Pulse rings around spinner -->
-        <div class="loader-pulse-ring"></div>
-        <div class="loader-pulse-ring"></div>
-        
-        <!-- Glow ring behind logo -->
-        <div class="loader-glow"></div>
-        
-        <div class="loader-content">
-            <!-- Animated icon -->
-            <div class="loader-icon">
-                <i class="fas fa-bolt"></i>
-            </div>
-            
-            <div class="loader-logo">
-                MA<span class="loader-logo-dot">.</span>Corp
-            </div>
-            
-            <!-- Circular SVG progress ring -->
-            <div class="loader-ring-container">
-                <svg class="loader-ring-svg" viewBox="0 0 120 120">
-                    <defs>
-                        <linearGradient id="loader-ring-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                            <stop offset="0%" stop-color="#0ea5e9" />
-                            <stop offset="50%" stop-color="#8b5cf6" />
-                            <stop offset="100%" stop-color="#06b6d4" />
-                        </linearGradient>
-                    </defs>
-                    <circle class="loader-ring-bg" cx="60" cy="60" r="54" />
-                    <circle class="loader-ring-progress" id="loader-ring-progress" cx="60" cy="60" r="54" />
-                </svg>
-                <div class="loader-spinner">
-                    <div class="loader-spinner-ring"></div>
-                    <div class="loader-spinner-ring"></div>
-                    <div class="loader-spinner-ring"></div>
+        <!-- Loading Screen -->
+        <div class="loader-container" id="loader-container">
+            <div class="loader-content">
+                <div class="loader-logo">
                 </div>
+                <div class="loader-progress">
+                    <div class="loader-progress-bar" id="loader-progress-bar"></div>
+                </div>
+                <div class="loader-percentage" id="loader-percentage">0%</div>
+                <div class="loader-text">Loading...</div>
             </div>
-            
-            <div class="loader-tagline">Loading Amazing Experience</div>
-            
-            <div class="loader-progress-container">
-                <div class="loader-progress-bar"></div>
-            </div>
-            
-            <div class="loader-percent" id="loader-percent">0%</div>
-            
-            <div class="loader-stage" id="loader-stage">Initializing...</div>
         </div>
-    </div>
 
-    <!-- Custom Cursor -->
-    <div class="cursor"></div>
-
-    <!-- Scroll Progress -->
-    <div class="scroll-progress"></div>
-
-    <!-- Back to Top -->
-    <button class="back-to-top">
-        <i class="fas fa-arrow-up"></i>
-    </button>
-
-    <!-- Navbar -->
+        <!-- Custom Cursor -->
+        <div class="cursor"></div>
+    
+        <!-- Scroll Progress -->
+        <div class="scroll-progress"></div>
+    
+        <!-- Back to Top -->
+        <button class="back-to-top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    
+        <!-- Navbar -->
     <nav class="navbar">
         <div class="container navbar-container">
             <a href="index.html" class="navbar-brand">
                 <span class="logo-text">Ahmed Ali</span>
+                <span class="logo-tagline">AI Engineer | Prompt Engineer | Full Stack Web Developer</span>
             </a>
 
             <div class="navbar-nav">
@@ -140,7 +79,7 @@
                 <a href="services.html" class="nav-link">Services</a>
                 <a href="skills.html" class="nav-link">Skills</a>
                 <a href="projects.html" class="nav-link">Projects</a>
-<a href="contact.html" class="nav-link active">Contact</a>
+    <a href="contact.html" class="nav-link active">Contact</a>
                 <button class="theme-toggle" aria-label="Toggle dark mode">
                     <i class="fas fa-moon"></i>
                 </button>
@@ -155,78 +94,150 @@
     </nav>
 
     <!-- Page Header -->
-    <section class="section" style="background: linear-gradient(135deg, #0ea5e9 0%, #8b5cf6 50%, #f97316 100%); color: var(--clr-white); padding: calc(var(--spacing-4xl) + 80px) 0 var(--spacing-3xl);">
-        <div class="container text-center">
-            <h1 class="section-title" style="color: var(--clr-white); font-size: var(--font-size-5xl);" data-animate="fadeInDown">Contact Us</h1>
-            <p class="section-subtitle" style="color: rgba(255, 255, 255, 0.8); max-width: 700px; margin: 0 auto;">
+    <section class="section contact-header-decor" style="background: linear-gradient(135deg, #0ea5e9 0%, #8b5cf6 50%, #f97316 100%); color: var(--clr-white); padding: calc(var(--spacing-4xl) + 80px) 0 var(--spacing-3xl); position: relative; overflow: hidden;">
+        <div class="container text-center" style="position: relative; z-index: 1;">
+            <!-- Decorative geometric shapes -->
+            <div class="header-decor-shapes" data-animate="fadeInDown" data-animate-delay="0">
+                <div class="hexagon-shape"></div>
+                <div class="diamond-shape"></div>
+                <div class="circle-shape"></div>
+                <div class="triangle-shape"></div>
+            </div>
+            <h1 class="section-title section-title-underline" style="color: var(--clr-white); font-size: var(--font-size-5xl);" data-animate="fadeInDown">Contact Us</h1>
+            <p class="section-subtitle" style="color: rgba(255, 255, 255, 0.8); max-width: 700px; margin: var(--spacing-xl) auto 0;" data-animate="fadeInDown" data-animate-delay="1">
                 Get in touch with MA Corporation for your next project
             </p>
+            <div class="separator-dots" data-animate="fadeInDown" data-animate-delay="2">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+            <!-- Animated decorative line -->
+            <div class="header-decor-line" data-animate="fadeInDown" data-animate-delay="2.5">
+                <span class="line-dot"></span>
+                <span class="line-dot"></span>
+                <span class="line-dot"></span>
+                <span class="line-dot"></span>
+                <span class="line-dot"></span>
+            </div>
         </div>
+        <!-- Decorative orbs -->
+        <div class="contact-orb contact-orb-1"></div>
+        <div class="contact-orb contact-orb-2"></div>
+        <div class="contact-orb contact-orb-3"></div>
+        <!-- Grid pattern -->
+        <div class="contact-grid-pattern"></div>
+        <!-- Particle container -->
+        <div class="particle-container" id="particleContainer"></div>
+        <!-- Decorative corner accents -->
+        <div class="header-corner-accent top-left"></div>
+        <div class="header-corner-accent top-right"></div>
+        <div class="header-corner-accent bottom-left"></div>
+        <div class="header-corner-accent bottom-right"></div>
+        <!-- Animated rings -->
+        <div class="header-ring ring-1"></div>
+        <div class="header-ring ring-2"></div>
+        <div class="header-ring ring-3"></div>
     </section>
 
+    <!-- Wave Separator -->
+    <div class="wave-separator" style="background: var(--clr-white);">
+        <svg viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,30 C360,60 720,0 1080,30 C1260,45 1380,30 1440,30 L1440,60 L0,60 Z" fill="var(--clr-primary)" opacity="0.1"/>
+            <path d="M0,40 C360,10 720,50 1080,20 C1260,5 1380,30 1440,30 L1440,60 L0,60 Z" fill="var(--clr-accent)" opacity="0.05"/>
+        </svg>
+    </div>
+
     <!-- Contact Section -->
-    <section class="section">
-        <div class="container">
+    <section class="section contact-section-decor" style="position: relative;">
+        <div class="container" style="position: relative; z-index: 1;">
             <div class="contact-grid">
                 <!-- Contact Information -->
-                <div class="contact-info" data-animate="fadeInLeft">
-                    <div class="contact-info-item" style="background: var(--clr-primary-gradient); color: var(--clr-white);">
-                        <div class="contact-icon" style="background: rgba(255,255,255,0.2);">
-                            <i class="fas fa-building"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h4 style="color: var(--clr-white);">MA Corporation</h4>
-                            <p style="color: rgba(255,255,255,0.9);">AI Engineer, Prompt Engineer & Full Stack Web Developer</p>
-                        </div>
-                    </div>
+                                <div class="contact-info" data-animate="fadeInLeft">
+                                    <div class="contact-info-item contact-info-item-gradient" style="background: var(--clr-primary-gradient); color: var(--clr-white); border-radius: var(--radius-lg) 0 0 var(--radius-lg);">
+                                        <div class="contact-icon" style="width: 65px; height: 65px; background: rgba(255,255,255,0.2); border-radius: var(--radius-lg); display: flex; align-items: center; justify-content: center; margin-bottom: var(--spacing-md);">
+                                            <i class="fas fa-building" style="font-size: 2rem; color: var(--clr-white);"></i>
+                                        </div>
+                                        <div class="contact-details">
+                                            <h4 style="color: var(--clr-white);" class="mb-2">MA Corporation</h4>
+                                            <p style="color: rgba(255,255,255,0.9);" class="mb-0">AI Engineer, Prompt Engineer & Full Stack Web Developer</p>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="contact-info-item">
+                                        <div class="contact-icon" style="width: 65px; height: 65px; background: rgba(37, 211, 102, 0.1); border-radius: var(--radius-lg); display: flex; align-items: center; justify-content: center; margin-bottom: var(--spacing-md);">
+                                            <i class="fab fa-whatsapp" style="font-size: 2rem; color: #25D366;"></i>
+                                        </div>
+                                        <div class="contact-details">
+                                            <span class="contact-badge"><i class="fab fa-whatsapp"></i> WhatsApp</span>
+                                            <h4>WhatsApp</h4>
+                                            <p><a href="https://wa.me/923194504717" target="_blank" style="color: var(--clr-primary); font-weight: 600;">92 319 4504717</a></p>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="contact-info-item">
+                                        <div class="contact-icon" style="width: 65px; height: 65px; background: rgba(14, 165, 233, 0.1); border-radius: var(--radius-lg); display: flex; align-items: center; justify-content: center; margin-bottom: var(--spacing-md);">
+                                            <i class="fas fa-envelope" style="font-size: 2rem; color: #0ea5e9;"></i>
+                                        </div>
+                                        <div class="contact-details">
+                                            <span class="contact-badge"><i class="fas fa-envelope"></i> Email</span>
+                                            <h4>Email</h4>
+                                            <p><a href="mailto:macorporaation.bussiness@gmail.com" style="color: var(--clr-primary); font-weight: 600;">macorporaation.bussiness@gmail.com</a></p>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="contact-info-item">
+                                        <div class="contact-icon" style="width: 65px; height: 65px; background: rgba(249, 115, 22, 0.1); border-radius: var(--radius-lg); display: flex; align-items: center; justify-content: center; margin-bottom: var(--spacing-md);">
+                                            <i class="fas fa-phone" style="font-size: 2rem; color: #f97316;"></i>
+                                        </div>
+                                        <div class="contact-details">
+                                            <span class="contact-badge"><i class="fas fa-phone"></i> Phone</span>
+                                            <h4>Phone</h4>
+                                            <p><a href="tel:923194504717" style="color: var(--clr-primary); font-weight: 600;">92 319 4504717</a></p>
+                                        </div>
+                                    </div>
 
-                    <div class="contact-info-item">
-                        <div class="contact-icon">
-                            <i class="fab fa-whatsapp"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h4>WhatsApp</h4>
-                            <p><a href="https://wa.me/923194504717" target="_blank" style="color: var(--clr-primary); font-weight: 600;">92 319 4504717</a></p>
-                        </div>
-                    </div>
-
-                    <div class="contact-info-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h4>Email</h4>
-                            <p>macorporaation.bussiness@gmail.com</p>
-                        </div>
-                    </div>
-
-                    <div class="contact-info-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h4>Phone</h4>
-                            <p>92 319 4504717</p>
-                        </div>
-                    </div>
-
-                    <div class="social-links">
-                        <a href="https://facebook.com/ahmedali" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://linkedin.com/in/ahmedali" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="https://instagram.com/ahmedali" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="https://wa.me/923194504717" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-                    </div>
-                </div>
+                                    <div class="contact-info-item">
+                                        <div class="contact-icon" style="width: 65px; height: 65px; background: rgba(26, 115, 232, 0.1); border-radius: var(--radius-lg); display: flex; align-items: center; justify-content: center; margin-bottom: var(--spacing-md);">
+                                            <i class="fab fa-github" style="font-size: 2rem; color: var(--clr-text);"></i>
+                                        </div>
+                                        <div class="contact-details">
+                                            <span class="contact-badge"><i class="fab fa-github"></i> GitHub</span>
+                                            <h4>GitHub</h4>
+                                            <p><a href="https://github.com/ahmaduni000" target="_blank" style="color: var(--clr-primary); font-weight: 600;">github.com/ahmaduni000</a></p>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="social-links">
+                                        <a href="https://facebook.com/ahmedali" target="_blank" rel="noopener noreferrer" class="social-link-enhanced" style="width: 50px; height: 50px; font-size: 1.3rem;" aria-label="Facebook">
+                                            <i class="fab fa-facebook-f" style="color: #1877F2;"></i>
+                                        </a>
+                                        <a href="https://linkedin.com/in/ahmedali" target="_blank" rel="noopener noreferrer" class="social-link-enhanced" style="width: 50px; height: 50px; font-size: 1.3rem;" aria-label="LinkedIn">
+                                            <i class="fab fa-linkedin-in" style="color: #0077B5;"></i>
+                                        </a>
+                                        <a href="https://instagram.com/ahmedali" target="_blank" rel="noopener noreferrer" class="social-link-enhanced" style="width: 50px; height: 50px; font-size: 1.3rem;" aria-label="Instagram">
+                                            <i class="fab fa-instagram" style="background: linear-gradient(135deg, #833AB4, #FD1D1D, #FCAF45); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"></i>
+                                        </a>
+                                        <a href="https://wa.me/923194504717" target="_blank" rel="noopener noreferrer" class="social-link-enhanced" style="width: 50px; height: 50px; font-size: 1.3rem;" aria-label="WhatsApp">
+                                            <i class="fab fa-whatsapp" style="color: #25D366;"></i>
+                                        </a>
+                                        <a href="https://github.com/ahmaduni000" target="_blank" rel="noopener noreferrer" class="social-link-enhanced" style="width: 50px; height: 50px; font-size: 1.3rem;" aria-label="GitHub">
+                                            <i class="fab fa-github" style="color: var(--clr-text);"></i>
+                                        </a>
+                                    </div>
+                                </div>
 
                 <!-- Contact Form -->
                 <div data-animate="fadeInRight">
                     <div class="form-card">
-                        <form class="contact-form">
+                        <div class="corner-accent top-right"></div>
+                        <div class="corner-accent bottom-left"></div>
+                        <form class="contact-form" id="contactForm" action="https://formspree.io/f/xpwzgkpd" method="POST">
                             <div class="form-grid">
                                 <div class="form-group">
                                     <div class="input-wrapper">
                                         <i class="fas fa-user input-icon"></i>
-                                        <input type="text" id="full-name" name="full-name" placeholder="Enter your full name" required autocomplete="name">
+                                        <input type="text" id="full-name" name="full-name" placeholder=" " required autocomplete="name">
                                         <label for="full-name" class="floating-label">Full Name *</label>
                                         <div class="input-border"></div>
                                     </div>
@@ -236,7 +247,7 @@
                                 <div class="form-group">
                                     <div class="input-wrapper">
                                         <i class="fas fa-envelope input-icon"></i>
-                                        <input type="email" id="email" name="email" placeholder="Enter your email" required autocomplete="email">
+                                        <input type="email" id="email" name="email" placeholder=" " required autocomplete="email">
                                         <label for="email" class="floating-label">Email Address *</label>
                                         <div class="input-border"></div>
                                     </div>
@@ -246,7 +257,7 @@
                                 <div class="form-group">
                                     <div class="input-wrapper">
                                         <i class="fas fa-phone input-icon"></i>
-                                        <input type="tel" id="phone" name="phone" placeholder="(123) 456-7890" autocomplete="tel">
+                                        <input type="tel" id="phone" name="phone" placeholder=" " autocomplete="tel">
                                         <label for="phone" class="floating-label">Phone Number</label>
                                         <div class="input-border"></div>
                                     </div>
@@ -256,26 +267,51 @@
                                 <div class="form-group form-group-full">
                                     <div class="input-wrapper">
                                         <i class="fas fa-comment-dots input-icon"></i>
-                                        <textarea id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
+                                        <textarea id="message" name="message" rows="5" placeholder=" " required></textarea>
                                         <label for="message" class="floating-label">Message *</label>
                                         <div class="input-border"></div>
                                     </div>
+                                    <div class="char-counter" id="charCounter">0/500</div>
                                     <div class="error-message"></div>
                                 </div>
                             </div>
 
-                            <button type="submit" id="submit-btn" class="btn-submit">
+                            <!-- Quick Reply Buttons -->
+                            <div class="quick-replies">
+                                <button type="button" class="quick-reply-btn" data-reply="Hello, I have a question about your services.">Hello</button>
+                                <button type="button" class="quick-reply-btn" data-reply="I need a website built.">Website</button>
+                                <button type="button" class="quick-reply-btn" data-reply="I need AI/ML solutions.">AI/ML</button>
+                                <button type="button" class="quick-reply-btn" data-reply="I need a mobile app.">Mobile App</button>
+                                <button type="button" class="quick-reply-btn" data-reply="Let's discuss a project.">Project</button>
+                            </div>
+
+                            <button type="submit" id="submit-btn" class="btn-submit ripple">
                                 <span class="btn-text">Send Message</span>
                                 <i class="fas fa-paper-plane btn-icon"></i>
                             </button>
 
-                            <div class="form-result"></div>
+                            <div class="form-result" id="formResult"></div>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+
+
+    <!-- Wave Separator Bottom -->
+    <div class="wave-separator" style="background: var(--clr-section-bg); margin-top: var(--spacing-2xl);">
+        <svg viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,30 C360,0 720,60 1080,30 C1260,0 1380,30 1440,30 L1440,60 L0,60 Z" fill="var(--clr-primary)" opacity="0.05"/>
+        </svg>
+    </div>
+
+    <!-- WhatsApp FAB -->
+    <a href="https://wa.me/923194504717" target="_blank" rel="noopener noreferrer" class="whatsapp-fab" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span class="fab-tooltip">Chat with us on WhatsApp</span>
+    </a>
 
     <!-- Footer -->
     <footer class="footer">
@@ -323,12 +359,10 @@
                 <div class="footer-col">
                     <h3>Services</h3>
                     <ul class="footer-links">
-                        <li><a href="services.html#frontend">Web Design</a></li>
-                        <li><a href="services.html#frontend">Frontend Development</a></li>
-                        <li><a href="services.html#ui-ux">UI/UX Design</a></li>
-                        <li><a href="services.html#javascript">JavaScript Development</a></li>
-                        <li><a href="services.html#python">Python Development</a></li>
-                        <li><a href="services.html#ai">AI Solutions</a></li>
+                        <li><a href="services.html#frontend">Web Development</a></li>
+                        <li><a href="projects.html">Python Projects</a></li>
+                        <li><a href="projects.html">AI Projects</a></li>
+                        <li><a href="projects.html">Automation</a></li>
                     </ul>
                 </div>
 
@@ -338,7 +372,7 @@
                     <p style="color: var(--clr-text-muted); font-size: var(--font-size-sm); margin-bottom: var(--spacing-lg);">
                         Subscribe to get the latest updates on projects, services, and tech insights.
                     </p>
-                    <form class="footer-newsletter" onsubmit="event.preventDefault(); alert('Thank you for subscribing!');">
+                    <form class="footer-newsletter" action="https://formspree.io/f/xpwzgkpd" method="POST">
                         <div class="footer-newsletter-input-group">
                             <input type="email" placeholder="Your email address" required class="footer-newsletter-input">
                             <button type="submit" class="footer-newsletter-btn">
@@ -371,4 +405,3 @@
 <script src="js/contact.js"></script>
 </body>
 </html>
-

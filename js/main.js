@@ -9,189 +9,9 @@ const menuToggle = document.querySelector('.menu-toggle');
 const navbarNav = document.querySelector('.navbar-nav');
 const navLinks = document.querySelectorAll('.nav-link');
 const themeToggle = document.querySelector('.theme-toggle');
-const loader = document.querySelector('.loader');
 const backToTop = document.querySelector('.back-to-top');
 const scrollProgress = document.querySelector('.scroll-progress');
 const cursor = document.querySelector('.cursor');
-
-// ==========================================================================
-// Loading Screen - Beautiful Enhanced
-// ==========================================================================
-function initLoader() {
-    if (!loader) return;
-
-    const percentEl = document.getElementById('loader-percent');
-    const stageEl = document.getElementById('loader-stage');
-    const progressBar = document.querySelector('.loader-progress-bar');
-    const ringProgress = document.getElementById('loader-ring-progress');
-    const ringCircumference = 339.292; // 2 * PI * 54
-    let progress = 0;
-    let progressInterval;
-    let animationFrame;
-
-    // Loading stages for immersive feel
-    const stages = [
-        { at: 0, text: 'Initializing...' },
-        { at: 15, text: 'Loading assets...' },
-        { at: 30, text: 'Configuring modules...' },
-        { at: 45, text: 'Establishing connection...' },
-        { at: 60, text: 'Optimizing performance...' },
-        { at: 75, text: 'Applying styles...' },
-        { at: 90, text: 'Almost ready...' }
-    ];
-    let currentStageIndex = 0;
-
-    // Smooth easing function - cubic bezier style
-    function easeProgress(p) {
-        // Custom easing: fast start, smooth middle, slow end
-        if (p < 0.3) return p * 1.8;
-        if (p < 0.7) return 0.54 + (p - 0.3) * 0.9;
-        return 0.9 + (p - 0.7) * 0.33;
-    }
-
-    // Animate percentage counter with smooth easing
-    function startProgressCounter() {
-        const startTime = Date.now();
-        const duration = 3500; // 3.5 seconds for full animation
-
-        function animate() {
-            const elapsed = Date.now() - startTime;
-            const rawProgress = Math.min(elapsed / duration, 1);
-            const eased = easeProgress(rawProgress);
-            progress = eased * 100;
-
-            if (progress > 99) progress = 99;
-
-            // Update percentage with smooth number animation
-            if (percentEl) {
-                const displayProgress = Math.floor(progress);
-                percentEl.textContent = displayProgress + '%';
-                // Add a subtle scale pulse on each number change
-                percentEl.style.transform = 'scale(1.1)';
-                setTimeout(() => {
-                    percentEl.style.transform = 'scale(1)';
-                }, 50);
-            }
-
-            // Update progress bar width
-            if (progressBar) {
-                progressBar.style.width = Math.floor(progress) + '%';
-            }
-
-            // Update SVG ring progress
-            if (ringProgress) {
-                const offset = ringCircumference - (ringCircumference * progress / 100);
-                ringProgress.style.strokeDashoffset = offset;
-            }
-
-            // Update stage text
-            if (stageEl) {
-                const nextStage = currentStageIndex + 1 < stages.length ? stages[currentStageIndex + 1] : null;
-                if (nextStage && progress >= nextStage.at) {
-                    currentStageIndex++;
-                    stageEl.textContent = stages[currentStageIndex].text;
-                    stageEl.style.opacity = '0';
-                    stageEl.style.transform = 'translateY(5px)';
-                    setTimeout(() => {
-                        stageEl.style.opacity = '1';
-                        stageEl.style.transform = 'translateY(0)';
-                        stageEl.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
-                    }, 50);
-                }
-            }
-
-            if (rawProgress < 1) {
-                animationFrame = requestAnimationFrame(animate);
-            } else {
-                // Reached 99%, wait for load event
-                progressInterval = setInterval(() => {
-                    // Tiny increments to keep it alive
-                    if (progress < 99) {
-                        progress += Math.random() * 0.3 + 0.05;
-                        if (progress > 99) progress = 99;
-                        if (percentEl) percentEl.textContent = Math.floor(progress) + '%';
-                        if (progressBar) progressBar.style.width = Math.floor(progress) + '%';
-                        if (ringProgress) {
-                            const offset = ringCircumference - (ringCircumference * progress / 100);
-                            ringProgress.style.strokeDashoffset = offset;
-                        }
-                    }
-                }, 200);
-            }
-        }
-
-        animationFrame = requestAnimationFrame(animate);
-    }
-
-    // Complete the progress with a smooth finish
-    function completeProgress() {
-        if (progressInterval) clearInterval(progressInterval);
-        if (animationFrame) cancelAnimationFrame(animationFrame);
-
-        // Smoothly animate to 100
-        let finishProgress = progress;
-        const finishInterval = setInterval(() => {
-            finishProgress += (100 - finishProgress) * 0.15 + 0.5;
-            if (finishProgress >= 100) {
-                finishProgress = 100;
-                clearInterval(finishInterval);
-            }
-            progress = finishProgress;
-            if (percentEl) {
-                percentEl.textContent = Math.floor(finishProgress) + '%';
-                percentEl.style.transform = 'scale(1.15)';
-                setTimeout(() => {
-                    percentEl.style.transform = 'scale(1)';
-                }, 80);
-            }
-            if (progressBar) {
-                progressBar.style.width = Math.floor(finishProgress) + '%';
-            }
-            if (ringProgress) {
-                const offset = ringCircumference - (ringCircumference * finishProgress / 100);
-                ringProgress.style.strokeDashoffset = offset;
-            }
-            if (stageEl && finishProgress >= 100) {
-                stageEl.textContent = 'Welcome!';
-                stageEl.style.color = '#06b6d4';
-                // Brand reveal animation
-                const logo = document.querySelector('.loader-logo');
-                if (logo) logo.classList.add('loader-brand-reveal');
-                stageEl.style.opacity = '0';
-                setTimeout(() => {
-                    stageEl.style.opacity = '1';
-                    stageEl.style.transition = 'opacity 0.4s ease';
-                }, 50);
-            }
-        }, 30);
-    }
-
-    // Hide loader with animation
-    function hideLoader() {
-        completeProgress();
-        setTimeout(() => {
-            loader.classList.add('loader-hidden');
-            setTimeout(() => {
-                if (loader.parentNode) {
-                    loader.remove();
-                }
-            }, 500);
-        }, 500);
-    }
-
-    // Start progress counter
-    startProgressCounter();
-
-    // On window load - complete and hide
-    window.addEventListener('load', hideLoader);
-
-    // Fallback: hide loader after 6 seconds max
-    setTimeout(() => {
-        if (loader.parentNode && !loader.classList.contains('loader-hidden')) {
-            hideLoader();
-        }
-    }, 6000);
-}
 
 // ==========================================================================
 // Navbar Scroll Effect
@@ -544,10 +364,10 @@ function throttle(func, limit) {
 // Initialize All Functions on DOM Ready
 // ==========================================================================
 document.addEventListener('DOMContentLoaded', () => {
-    initLoader();
     initNavbarScroll();
     initMobileMenu();
     initActiveNav();
+    initLoader();
     initThemeToggle();
     initScrollProgress();
     initBackToTop();
@@ -576,12 +396,49 @@ window.addEventListener('resize', debounce(() => {
 }, 250));
 
 // ==========================================================================
+// Loading Screen
+// ==========================================================================
+function initLoader() {
+    const loaderContainer = document.getElementById('loader-container');
+    if (!loaderContainer) return;
+
+    const progressBar = loaderContainer.querySelector('.loader-progress-bar');
+    const percentageEl = loaderContainer.querySelector('.loader-percentage');
+
+    let progress = 0;
+    const maxProgress = 100;
+    const interval = setInterval(() => {
+        progress += Math.floor(Math.random() * 10) + 1;
+        if (progress >= maxProgress) {
+            progress = maxProgress;
+            clearInterval(interval);
+        }
+        progressBar.style.width = progress + '%';
+        percentageEl.textContent = progress + '%';
+    }, 100);
+
+    // Fade out loader when page is fully loaded
+    window.addEventListener('load', () => {
+        clearInterval(interval);
+        progress = maxProgress;
+        progressBar.style.width = '100%';
+        percentageEl.textContent = '100%';
+
+        setTimeout(() => {
+            loaderContainer.classList.add('fade-out');
+            setTimeout(() => {
+                loaderContainer.style.display = 'none';
+            }, 500);
+        }, 300);
+    });
+}
+
+// ==========================================================================
 // Export for module usage (if needed)
 // ==========================================================================
 window.Portfolio = {
     debounce,
     throttle,
-    initLoader,
     initNavbarScroll,
     initMobileMenu,
     initThemeToggle,
@@ -591,5 +448,6 @@ window.Portfolio = {
     initCustomCursor,
     initScrollReveal,
     initCounters,
-    initSkillProgress
+    initSkillProgress,
+    initLoader
 };

@@ -1,7 +1,7 @@
 /* ==========================================================================
-   Ahmed Ali - Professional Portfolio
-   Contact Form JavaScript
-   ========================================================================== */
+    Ahmed Ali - Professional Portfolio
+    Contact Form JavaScript
+    ========================================================================== */
 
 // ==========================================================================
 // Contact Form Validation
@@ -15,6 +15,8 @@ function initContactForm() {
     const phoneInput = form.querySelector('#phone');
     const messageInput = form.querySelector('#message');
     const submitBtn = form.querySelector('#submit-btn');
+    const charCounter = document.getElementById('charCounter');
+    const formResult = document.getElementById('formResult');
 
     // ==========================================================================
     // Floating Label Management
@@ -52,6 +54,25 @@ function initContactForm() {
     });
 
     // ==========================================================================
+    // Character Counter for Message
+    // ==========================================================================
+    if (messageInput && charCounter) {
+        messageInput.addEventListener('input', function () {
+            const count = messageInput.value.length;
+            charCounter.textContent = count + '/500';
+            charCounter.style.display = 'block';
+
+            if (count >= 500) {
+                charCounter.className = 'char-counter limit';
+            } else if (count >= 400) {
+                charCounter.className = 'char-counter warning';
+            } else {
+                charCounter.className = 'char-counter';
+            }
+        });
+    }
+
+    // ==========================================================================
     // Validation Helpers
     // ==========================================================================
     function showError(input, message) {
@@ -87,7 +108,6 @@ function initContactForm() {
     }
 
     function validatePhone(phone) {
-        // Allow various phone formats: +1234567890, (123) 456-7890, 123-456-7890, etc.
         const re = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/;
         return re.test(String(phone));
     }
@@ -198,12 +218,14 @@ function initContactForm() {
                             submitBtn.classList.remove('loading');
                         }
 
-                        resultMessage.className = 'form-result success-message';
+                        resultMessage.className = 'form-result toast success-message';
                         resultMessage.innerHTML = `
                             <div class="result-content">
                                 <i class="fas fa-check-circle"></i>
-                                <p><strong>Message Sent Successfully!</strong></p>
-                                <span>Thank you for reaching out. I will get back to you soon.</span>
+                                <div style="text-align: left;">
+                                    <p><strong>Message Sent Successfully!</strong></p>
+                                    <span>Thank you for reaching out. I will get back to you soon.</span>
+                                </div>
                             </div>
                         `;
 
@@ -214,7 +236,6 @@ function initContactForm() {
                         const allInputs = form.querySelectorAll('input, textarea');
                         allInputs.forEach(function (input) {
                             input.classList.remove('success', 'error');
-                            // Update floating label after reset
                             const formGroup = input.closest('.form-group');
                             if (formGroup) {
                                 const label = formGroup.querySelector('.floating-label');
@@ -223,6 +244,12 @@ function initContactForm() {
                                 }
                             }
                         });
+
+                        // Reset character counter
+                        if (charCounter) {
+                            charCounter.textContent = '0/500';
+                            charCounter.className = 'char-counter';
+                        }
 
                         // Scroll to result
                         resultMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
@@ -237,12 +264,14 @@ function initContactForm() {
                         submitBtn.classList.remove('loading');
                     }
 
-                    resultMessage.className = 'form-result error-message';
+                    resultMessage.className = 'form-result toast error-message';
                     resultMessage.innerHTML = `
                         <div class="result-content">
                             <i class="fas fa-exclamation-circle"></i>
-                            <p><strong>Please complete the required fields.</strong></p>
-                            <span>Please check the form for errors and try again.</span>
+                            <div style="text-align: left;">
+                                <p><strong>Please complete the required fields.</strong></p>
+                                <span>Please check the form for errors and try again.</span>
+                            </div>
                         </div>
                     `;
 
@@ -267,8 +296,131 @@ function initContactForm() {
 }
 
 // ==========================================================================
+// Particle System for Header Background
+// ==========================================================================
+function initParticleSystem() {
+    const container = document.getElementById('particleContainer');
+    if (!container) return;
+
+    const particleCount = 30;
+    const headerSection = container.parentElement;
+
+    for (let i = 0; i < particleCount; i++) {
+        const particle = document.createElement('div');
+        particle.classList.add('particle');
+        particle.style.left = Math.random() * 100 + '%';
+        particle.style.top = (60 + Math.random() * 40) + '%';
+        particle.style.animationDuration = (4 + Math.random() * 6) + 's';
+        particle.style.animationDelay = Math.random() * 5 + 's';
+        particle.style.width = (2 + Math.random() * 4) + 'px';
+        particle.style.height = particle.style.width;
+        particle.style.opacity = '0';
+        container.appendChild(particle);
+    }
+}
+
+// ==========================================================================
+// Quick Reply Buttons
+// ==========================================================================
+function initQuickReplies() {
+    const quickReplyBtns = document.querySelectorAll('.quick-reply-btn');
+    const messageInput = document.querySelector('#message');
+
+    quickReplyBtns.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+            const replyText = btn.getAttribute('data-reply');
+            if (messageInput && replyText) {
+                // Append to existing message or set as new
+                const currentValue = messageInput.value;
+                if (currentValue.trim() === '') {
+                    messageInput.value = replyText;
+                } else {
+                    messageInput.value = currentValue + ' ' + replyText;
+                }
+                // Trigger input event to update char counter
+                messageInput.dispatchEvent(new Event('input'));
+                // Focus the message field
+                messageInput.focus();
+                // Visual feedback
+                btn.style.background = 'var(--clr-primary)';
+                btn.style.color = 'var(--clr-white)';
+                setTimeout(function () {
+                    btn.style.background = '';
+                    btn.style.color = '';
+                }, 300);
+            }
+        });
+    });
+}
+
+// ==========================================================================
+// Ripple Effect on Buttons
+// ==========================================================================
+function initRippleEffect() {
+    const rippleElements = document.querySelectorAll('.ripple');
+
+    rippleElements.forEach(function (el) {
+        el.addEventListener('click', function (e) {
+            const rect = el.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+
+            const ripple = document.createElement('span');
+            ripple.classList.add('ripple-effect');
+            ripple.style.left = x + 'px';
+            ripple.style.top = y + 'px';
+            ripple.style.position = 'absolute';
+            ripple.style.width = '100px';
+            ripple.style.height = '100px';
+            ripple.style.background = 'rgba(255, 255, 255, 0.4)';
+            ripple.style.borderRadius = '50%';
+            ripple.style.transform = 'scale(0)';
+            ripple.style.animation = 'ripple-effect 0.6s ease-out';
+            ripple.style.pointerEvents = 'none';
+            ripple.style.position = 'fixed';
+
+            el.style.position = 'relative';
+            el.style.overflow = 'hidden';
+            el.appendChild(ripple);
+
+            setTimeout(function () {
+                ripple.remove();
+            }, 600);
+        });
+    });
+}
+
+// ==========================================================================
+// Scroll Reveal Observer
+// ==========================================================================
+function initScrollRevealObserver() {
+    const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries, obs) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                obs.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('.reveal-on-scroll').forEach(el => {
+        observer.observe(el);
+    });
+}
+
+// ==========================================================================
 // Initialize on DOM Ready
 // ==========================================================================
 document.addEventListener('DOMContentLoaded', function () {
     initContactForm();
+    initParticleSystem();
+    initQuickReplies();
+    initRippleEffect();
+    initScrollRevealObserver();
 });

@@ -9,8 +9,8 @@
     <meta name="author" content="Ahmed Ali">
 
     <!-- Open Graph / Social Media -->
-    <meta property="og:title" content="Project Details - Ahmed Ali Frontend Developer & Web Designer">
-    <meta property="og:description" content="Detailed case study of Airline Reservation System and Hotel Management System projects.">
+    <meta property="og:title" content="Project Details - Ahmed Ali AI Engineer, Prompt Engineer & Full Stack Web Developer">
+    <meta property="og:description" content="Detailed case study of Airline Reservation System, Hotel Management System, and Python Automation projects.">
     <meta property="og:image" content="images/profile/profile-photo.svg">
     <meta property="og:url" content="https://ahmed-ali-portfolio.com/project-details.html">
     <meta property="og:type" content="website">
@@ -37,101 +37,40 @@
     <link rel="stylesheet" href="css/animations.css">
     <link rel="stylesheet" href="css/responsive.css">
 
-    <title>Project Details - Ahmed Ali Frontend Developer & Web Designer</title>
+    <title>Project Details - Ahmed Ali AI Engineer, Prompt Engineer & Full Stack Web Developer</title>
 </head>
 <body>
 
-    <!-- Loading Screen - Premium Enhanced -->
-    <div class="loader">
-        <!-- Scan line overlay -->
-        <div class="loader-scanline"></div>
-        
-        <!-- Animated gradient orbs -->
-        <div class="loader-orb loader-orb-1"></div>
-        <div class="loader-orb loader-orb-2"></div>
-        <div class="loader-orb loader-orb-3"></div>
-        
-        <!-- Floating particles -->
-        <div class="loader-particles">
-            <div class="loader-particle"></div>
-            <div class="loader-particle"></div>
-            <div class="loader-particle"></div>
-            <div class="loader-particle"></div>
-            <div class="loader-particle"></div>
-            <div class="loader-particle"></div>
-            <div class="loader-particle"></div>
-            <div class="loader-particle"></div>
-            <div class="loader-particle"></div>
-            <div class="loader-particle"></div>
-            <div class="loader-particle"></div>
-            <div class="loader-particle"></div>
-        </div>
-        
-        <!-- Pulse rings around spinner -->
-        <div class="loader-pulse-ring"></div>
-        <div class="loader-pulse-ring"></div>
-        
-        <!-- Glow ring behind logo -->
-        <div class="loader-glow"></div>
-        
-        <div class="loader-content">
-            <!-- Animated icon -->
-            <div class="loader-icon">
-                <i class="fas fa-bolt"></i>
-            </div>
-            
-            <div class="loader-logo">
-                MA<span class="loader-logo-dot">.</span>Corp
-            </div>
-            
-            <!-- Circular SVG progress ring -->
-            <div class="loader-ring-container">
-                <svg class="loader-ring-svg" viewBox="0 0 120 120">
-                    <defs>
-                        <linearGradient id="loader-ring-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                            <stop offset="0%" stop-color="#0ea5e9" />
-                            <stop offset="50%" stop-color="#8b5cf6" />
-                            <stop offset="100%" stop-color="#06b6d4" />
-                        </linearGradient>
-                    </defs>
-                    <circle class="loader-ring-bg" cx="60" cy="60" r="54" />
-                    <circle class="loader-ring-progress" id="loader-ring-progress" cx="60" cy="60" r="54" />
-                </svg>
-                <div class="loader-spinner">
-                    <div class="loader-spinner-ring"></div>
-                    <div class="loader-spinner-ring"></div>
-                    <div class="loader-spinner-ring"></div>
+        <!-- Loading Screen -->
+        <div class="loader-container" id="loader-container">
+            <div class="loader-content">
+                <div class="loader-logo">
                 </div>
+                <div class="loader-progress">
+                    <div class="loader-progress-bar" id="loader-progress-bar"></div>
+                </div>
+                <div class="loader-percentage" id="loader-percentage">0%</div>
+                <div class="loader-text">Loading...</div>
             </div>
-            
-            <div class="loader-tagline">Loading Amazing Experience</div>
-            
-            <div class="loader-progress-container">
-                <div class="loader-progress-bar"></div>
-            </div>
-            
-            <div class="loader-percent" id="loader-percent">0%</div>
-            
-            <div class="loader-stage" id="loader-stage">Initializing...</div>
         </div>
-    </div>
 
-    <!-- Custom Cursor -->
-    <div class="cursor"></div>
-
-    <!-- Scroll Progress -->
-    <div class="scroll-progress"></div>
-
-    <!-- Back to Top -->
-    <button class="back-to-top">
-        <i class="fas fa-arrow-up"></i>
-    </button>
-
-    <!-- Navbar -->
+        <!-- Custom Cursor -->
+        <div class="cursor"></div>
+    
+        <!-- Scroll Progress -->
+        <div class="scroll-progress"></div>
+    
+        <!-- Back to Top -->
+        <button class="back-to-top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    
+        <!-- Navbar -->
     <nav class="navbar">
         <div class="container navbar-container">
             <a href="index.html" class="navbar-brand">
                 <span class="logo-text">Ahmed Ali</span>
+                <span class="logo-tagline">AI Engineer | Prompt Engineer | Full Stack Web Developer</span>
             </a>
 
             <div class="navbar-nav">
@@ -604,12 +543,11 @@
                 <div class="footer-col">
                     <h3>Services</h3>
                     <ul class="footer-links">
-                        <li><a href="services.html#frontend">Web Design</a></li>
-                        <li><a href="services.html#frontend">Frontend Development</a></li>
-                        <li><a href="services.html#ui-ux">UI/UX Design</a></li>
-                        <li><a href="services.html#javascript">JavaScript Development</a></li>
-                        <li><a href="services.html#python">Python Development</a></li>
-                        <li><a href="services.html#ai">AI Solutions</a></li>
+                        <li><a href="services.html#web-development">Web Development</a></li>
+                        <li><a href="services.html#python-projects">Python Projects</a></li>
+                        <li><a href="services.html#ai-projects">AI Projects</a></li>
+                        <li><a href="services.html#ai-projects">AI Chatbot</a></li>
+                        <li><a href="services.html#automation">Automation</a></li>
                     </ul>
                 </div>
 
@@ -619,7 +557,7 @@
                     <p style="color: var(--clr-text-muted); font-size: var(--font-size-sm); margin-bottom: var(--spacing-lg);">
                         Subscribe to get the latest updates on projects, services, and tech insights.
                     </p>
-                    <form class="footer-newsletter" onsubmit="event.preventDefault(); alert('Thank you for subscribing!');">
+                    <form class="footer-newsletter" action="https://formspree.io/f/xpwzgkpd" method="POST">
                         <div class="footer-newsletter-input-group">
                             <input type="email" placeholder="Your email address" required class="footer-newsletter-input">
                             <button type="submit" class="footer-newsletter-btn">

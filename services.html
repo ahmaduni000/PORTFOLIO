@@ -4,13 +4,13 @@
     <!-- Required Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ahmed Ali - Services. Professional web development, Python projects, AI projects, SEO, and digital marketing services.">
-    <meta name="keywords" content="Ahmed Ali, Services, Web Development, Python Projects, AI Projects, SEO, Digital Marketing, Web Design">
+    <meta name="description" content="Ahmed Ali - Services. Professional web development, Python projects, AI projects, and automation services.">
+    <meta name="keywords" content="Ahmed Ali, Services, Web Development, Python Projects, AI Projects, Automation, Web Design">
     <meta name="author" content="Ahmed Ali">
 
     <!-- Open Graph / Social Media -->
-    <meta property="og:title" content="Services - Ahmed Ali Frontend Developer & Web Designer">
-    <meta property="og:description" content="Professional web development, Python projects, AI projects, SEO, and digital marketing services.">
+    <meta property="og:title" content="Services - Ahmed Ali AI Engineer, Prompt Engineer & Full Stack Web Developer">
+    <meta property="og:description" content="Professional web development, Python projects, AI projects, and automation services.">
     <meta property="og:image" content="images/profile/profile-photo.svg">
     <meta property="og:url" content="https://ahmed-ali-portfolio.com/services.html">
     <meta property="og:type" content="website">
@@ -37,101 +37,40 @@
     <link rel="stylesheet" href="css/animations.css">
     <link rel="stylesheet" href="css/responsive.css">
 
-    <title>Services - Ahmed Ali Frontend Developer & Web Designer</title>
+    <title>Services - Ahmed Ali AI Engineer, Prompt Engineer & Full Stack Web Developer</title>
 </head>
 <body>
 
-    <!-- Loading Screen - Premium Enhanced -->
-    <div class="loader">
-        <!-- Scan line overlay -->
-        <div class="loader-scanline"></div>
-        
-        <!-- Animated gradient orbs -->
-        <div class="loader-orb loader-orb-1"></div>
-        <div class="loader-orb loader-orb-2"></div>
-        <div class="loader-orb loader-orb-3"></div>
-        
-        <!-- Floating particles -->
-        <div class="loader-particles">
-            <div class="loader-particle"></div>
-            <div class="loader-particle"></div>
-            <div class="loader-particle"></div>
-            <div class="loader-particle"></div>
-            <div class="loader-particle"></div>
-            <div class="loader-particle"></div>
-            <div class="loader-particle"></div>
-            <div class="loader-particle"></div>
-            <div class="loader-particle"></div>
-            <div class="loader-particle"></div>
-            <div class="loader-particle"></div>
-            <div class="loader-particle"></div>
-        </div>
-        
-        <!-- Pulse rings around spinner -->
-        <div class="loader-pulse-ring"></div>
-        <div class="loader-pulse-ring"></div>
-        
-        <!-- Glow ring behind logo -->
-        <div class="loader-glow"></div>
-        
-        <div class="loader-content">
-            <!-- Animated icon -->
-            <div class="loader-icon">
-                <i class="fas fa-bolt"></i>
-            </div>
-            
-            <div class="loader-logo">
-                MA<span class="loader-logo-dot">.</span>Corp
-            </div>
-            
-            <!-- Circular SVG progress ring -->
-            <div class="loader-ring-container">
-                <svg class="loader-ring-svg" viewBox="0 0 120 120">
-                    <defs>
-                        <linearGradient id="loader-ring-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                            <stop offset="0%" stop-color="#0ea5e9" />
-                            <stop offset="50%" stop-color="#8b5cf6" />
-                            <stop offset="100%" stop-color="#06b6d4" />
-                        </linearGradient>
-                    </defs>
-                    <circle class="loader-ring-bg" cx="60" cy="60" r="54" />
-                    <circle class="loader-ring-progress" id="loader-ring-progress" cx="60" cy="60" r="54" />
-                </svg>
-                <div class="loader-spinner">
-                    <div class="loader-spinner-ring"></div>
-                    <div class="loader-spinner-ring"></div>
-                    <div class="loader-spinner-ring"></div>
+        <!-- Loading Screen -->
+        <div class="loader-container" id="loader-container">
+            <div class="loader-content">
+                <div class="loader-logo">
                 </div>
+                <div class="loader-progress">
+                    <div class="loader-progress-bar" id="loader-progress-bar"></div>
+                </div>
+                <div class="loader-percentage" id="loader-percentage">0%</div>
+                <div class="loader-text">Loading...</div>
             </div>
-            
-            <div class="loader-tagline">Loading Amazing Experience</div>
-            
-            <div class="loader-progress-container">
-                <div class="loader-progress-bar"></div>
-            </div>
-            
-            <div class="loader-percent" id="loader-percent">0%</div>
-            
-            <div class="loader-stage" id="loader-stage">Initializing...</div>
         </div>
-    </div>
 
-    <!-- Custom Cursor -->
-    <div class="cursor"></div>
-
-    <!-- Scroll Progress -->
-    <div class="scroll-progress"></div>
-
-    <!-- Back to Top -->
-    <button class="back-to-top">
-        <i class="fas fa-arrow-up"></i>
-    </button>
-
-    <!-- Navbar -->
+        <!-- Custom Cursor -->
+        <div class="cursor"></div>
+    
+        <!-- Scroll Progress -->
+        <div class="scroll-progress"></div>
+    
+        <!-- Back to Top -->
+        <button class="back-to-top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    
+        <!-- Navbar -->
     <nav class="navbar">
         <div class="container navbar-container">
             <a href="index.html" class="navbar-brand">
                 <span class="logo-text">Ahmed Ali</span>
+                <span class="logo-tagline">AI Engineer | Prompt Engineer | Full Stack Web Developer</span>
             </a>
 
             <div class="navbar-nav">
@@ -159,7 +98,7 @@
         <div class="container text-center">
             <h1 class="section-title" style="color: var(--clr-white); font-size: var(--font-size-5xl);" data-animate="fadeInDown">My Services</h1>
             <p class="section-subtitle" style="color: rgba(255, 255, 255, 0.8); max-width: 700px; margin: 0 auto;">
-                Professional web development, Python, AI, SEO, and digital marketing services to help your business grow online
+                Professional web development, Python, AI, and automation services to help your business grow online
             </p>
         </div>
     </section>
@@ -172,7 +111,7 @@
                 <p class="section-subtitle">Professional services tailored to your needs</p>
             </div>
 
-            <div class="grid" style="grid-template-columns: repeat(3, 1fr); gap: var(--spacing-xl);">
+            <div class="grid services-grid" style="gap: var(--spacing-xl);">
                 <!-- Service 1: Web Development -->
                 <div class="card" id="web-development" data-animate="fadeInUp" data-animate-delay="1">
                     <div class="card-header">
@@ -181,11 +120,11 @@
                         </div>
                         <h3 class="card-title">Web Development</h3>
                     </div>
-                    <p class="card-text">Building modern, responsive, and high-performance websites using HTML, CSS, JavaScript, and Python. From simple landing pages to full-featured web applications.</p>
+                    <p class="card-text">Building modern, responsive, and high-performance websites using HTML, CSS, JavaScript, and Python. From simple landing pages to full-featured web applications, including full stack development with backend integration.</p>
                     <div class="service-features" style="margin: var(--spacing-md) 0;">
                         <ul style="list-style: none; padding: 0;">
                             <li style="margin-bottom: var(--spacing-xs); display: flex; align-items: center; gap: var(--spacing-sm); color: var(--clr-text-light); font-size: var(--font-size-sm);">
-                                <i class="fas fa-check" style="color: var(--clr-primary);"></i> HTML, CSS, JavaScript & Python
+                                <i class="fas fa-check" style="color: var(--clr-primary);"></i> Full Stack Development (HTML, CSS, JavaScript & Python)
                             </li>
                             <li style="margin-bottom: var(--spacing-xs); display: flex; align-items: center; gap: var(--spacing-sm); color: var(--clr-text-light); font-size: var(--font-size-sm);">
                                 <i class="fas fa-check" style="color: var(--clr-primary);"></i> Responsive & interactive design
@@ -209,11 +148,11 @@
                         </div>
                         <h3 class="card-title">Python Projects</h3>
                     </div>
-                    <p class="card-text">Developing Python-based solutions including automation scripts, data processing tools, web scraping, file management, and backend systems for various business needs.</p>
+                    <p class="card-text">Developing Python-based web applications and solutions including automation scripts, data processing tools, web scraping, file management, and backend systems for various business needs.</p>
                     <div class="service-features" style="margin: var(--spacing-md) 0;">
                         <ul style="list-style: none; padding: 0;">
                             <li style="margin-bottom: var(--spacing-xs); display: flex; align-items: center; gap: var(--spacing-sm); color: var(--clr-text-light); font-size: var(--font-size-sm);">
-                                <i class="fas fa-check" style="color: var(--clr-primary);"></i> Automation scripts & tools
+                                <i class="fas fa-check" style="color: var(--clr-primary);"></i> Python web applications & automation scripts
                             </li>
                             <li style="margin-bottom: var(--spacing-xs); display: flex; align-items: center; gap: var(--spacing-sm); color: var(--clr-text-light); font-size: var(--font-size-sm);">
                                 <i class="fas fa-check" style="color: var(--clr-primary);"></i> Data processing & analysis
@@ -257,60 +196,173 @@
                     </button>
                 </div>
 
-                <!-- Service 4: SEO -->
-                <div class="card" id="seo" data-animate="fadeInUp" data-animate-delay="4">
+                <!-- Service 4: AI Chatbot -->
+                <div class="card" id="ai-chatbot" data-animate="fadeInUp" data-animate-delay="4">
                     <div class="card-header">
                         <div class="card-icon">
-                            <i class="fas fa-search"></i>
+                            <i class="fas fa-comments"></i>
                         </div>
-                        <h3 class="card-title">SEO</h3>
+                        <h3 class="card-title">AI Chatbot</h3>
                     </div>
-                    <p class="card-text">Optimizing websites for search engines with proper meta tags, semantic HTML, fast loading speeds, mobile-friendliness, and content strategy to improve rankings.</p>
+                    <p class="card-text">Building intelligent conversational AI chatbots for customer support, lead generation, and automated responses using natural language processing and machine learning.</p>
                     <div class="service-features" style="margin: var(--spacing-md) 0;">
                         <ul style="list-style: none; padding: 0;">
                             <li style="margin-bottom: var(--spacing-xs); display: flex; align-items: center; gap: var(--spacing-sm); color: var(--clr-text-light); font-size: var(--font-size-sm);">
-                                <i class="fas fa-check" style="color: var(--clr-primary);"></i> Meta tags & semantic HTML
+                                <i class="fas fa-check" style="color: var(--clr-primary);"></i> Natural language processing
                             </li>
                             <li style="margin-bottom: var(--spacing-xs); display: flex; align-items: center; gap: var(--spacing-sm); color: var(--clr-text-light); font-size: var(--font-size-sm);">
-                                <i class="fas fa-check" style="color: var(--clr-primary);"></i> Fast loading & mobile-friendly
+                                <i class="fas fa-check" style="color: var(--clr-primary);"></i> 24/7 automated responses
                             </li>
                             <li style="margin-bottom: var(--spacing-xs); display: flex; align-items: center; gap: var(--spacing-sm); color: var(--clr-text-light); font-size: var(--font-size-sm);">
-                                <i class="fas fa-check" style="color: var(--clr-primary);"></i> Content strategy & rankings
+                                <i class="fas fa-check" style="color: var(--clr-primary);"></i> Multi-platform integration
                             </li>
                         </ul>
                     </div>
-                    <button class="btn btn-outline btn-sm learn-more-btn" data-service="seo" style="width: 100%;">
+                    <button class="btn btn-outline btn-sm learn-more-btn" data-service="ai-chatbot" style="width: 100%;">
                         <span>Learn More</span>
                         <i class="fas fa-arrow-right"></i>
                     </button>
                 </div>
 
-                <!-- Service 5: Digital Marketing -->
-                <div class="card" id="digital-marketing" data-animate="fadeInUp" data-animate-delay="5">
+                <!-- Service 5: Automation -->
+                <div class="card" id="automation" data-animate="fadeInUp" data-animate-delay="5">
                     <div class="card-header">
                         <div class="card-icon">
-                            <i class="fas fa-chart-line"></i>
+                            <i class="fas fa-cogs"></i>
                         </div>
-                        <h3 class="card-title">Digital Marketing</h3>
+                        <h3 class="card-title">Automation</h3>
                     </div>
-                    <p class="card-text">Helping businesses grow online with social media management, content marketing, email campaigns, and data-driven strategies to reach the right audience.</p>
+                    <p class="card-text">Creating custom automation solutions to streamline workflows, reduce manual effort, and increase productivity through scripts, bots, and scheduled tasks.</p>
                     <div class="service-features" style="margin: var(--spacing-md) 0;">
                         <ul style="list-style: none; padding: 0;">
                             <li style="margin-bottom: var(--spacing-xs); display: flex; align-items: center; gap: var(--spacing-sm); color: var(--clr-text-light); font-size: var(--font-size-sm);">
-                                <i class="fas fa-check" style="color: var(--clr-primary);"></i> Social media management
+                                <i class="fas fa-check" style="color: var(--clr-primary);"></i> Workflow automation scripts
                             </li>
                             <li style="margin-bottom: var(--spacing-xs); display: flex; align-items: center; gap: var(--spacing-sm); color: var(--clr-text-light); font-size: var(--font-size-sm);">
-                                <i class="fas fa-check" style="color: var(--clr-primary);"></i> Content & email marketing
+                                <i class="fas fa-check" style="color: var(--clr-primary);"></i> Scheduled tasks & bots
                             </li>
                             <li style="margin-bottom: var(--spacing-xs); display: flex; align-items: center; gap: var(--spacing-sm); color: var(--clr-text-light); font-size: var(--font-size-sm);">
-                                <i class="fas fa-check" style="color: var(--clr-primary);"></i> Data-driven strategies
+                                <i class="fas fa-check" style="color: var(--clr-primary);"></i> Process optimization
                             </li>
                         </ul>
                     </div>
-                    <button class="btn btn-outline btn-sm learn-more-btn" data-service="digital-marketing" style="width: 100%;">
+                    <button class="btn btn-outline btn-sm learn-more-btn" data-service="automation" style="width: 100%;">
                         <span>Learn More</span>
                         <i class="fas fa-arrow-right"></i>
                     </button>
+                </div>
+
+                <!-- Service 6: Flask Development -->
+                <div class="card" id="flask-development" data-animate="fadeInUp" data-animate-delay="6">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <h3 class="card-title">Flask Development</h3>
+                    </div>
+                    <p class="card-text">Building robust web applications using the Flask microframework, including REST APIs, database integration, authentication systems, and deployment with modern DevOps practices.</p>
+                    <div class="service-features" style="margin: var(--spacing-md) 0;">
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="margin-bottom: var(--spacing-xs); display: flex; align-items: center; gap: var(--spacing-sm); color: var(--clr-text-light); font-size: var(--font-size-sm);">
+                                <i class="fas fa-check" style="color: var(--clr-primary);"></i> REST API development
+                            </li>
+                            <li style="margin-bottom: var(--spacing-xs); display: flex; align-items: center; gap: var(--spacing-sm); color: var(--clr-text-light); font-size: var(--font-size-sm);">
+                                <i class="fas fa-check" style="color: var(--clr-primary);"></i> Database integration (SQLAlchemy)
+                            </li>
+                            <li style="margin-bottom: var(--spacing-xs); display: flex; align-items: center; gap: var(--spacing-sm); color: var(--clr-text-light); font-size: var(--font-size-sm);">
+                                <i class="fas fa-check" style="color: var(--clr-primary);"></i> Authentication & deployment
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="btn btn-outline btn-sm learn-more-btn" data-service="flask-development" style="width: 100%;">
+                        <span>Learn More</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+
+                <!-- Service 7: Backend Development -->
+                <div class="card" id="backend-development" data-animate="fadeInUp" data-animate-delay="7">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h3 class="card-title">Backend Development</h3>
+                    </div>
+                    <p class="card-text">Designing and implementing server-side logic, databases, APIs, and cloud infrastructure for scalable web applications using Python, Node.js, and modern backend frameworks.</p>
+                    <div class="service-features" style="margin: var(--spacing-md) 0;">
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="margin-bottom: var(--spacing-xs); display: flex; align-items: center; gap: var(--spacing-sm); color: var(--clr-text-light); font-size: var(--font-size-sm);">
+                                <i class="fas fa-check" style="color: var(--clr-primary);"></i> Server architecture & APIs
+                            </li>
+                            <li style="margin-bottom: var(--spacing-xs); display: flex; align-items: center; gap: var(--spacing-sm); color: var(--clr-text-light); font-size: var(--font-size-sm);">
+                                <i class="fas fa-check" style="color: var(--clr-primary);"></i> Database design & optimization
+                            </li>
+                            <li style="margin-bottom: var(--spacing-xs); display: flex; align-items: center; gap: var(--spacing-sm); color: var(--clr-text-light); font-size: var(--font-size-sm);">
+                                <i class="fas fa-check" style="color: var(--clr-primary);"></i> Cloud deployment & scaling
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="btn btn-outline btn-sm learn-more-btn" data-service="backend-development" style="width: 100%;">
+                        <span>Learn More</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+
+                <!-- Service 8: Frontend Development -->
+                <div class="card" id="frontend-development" data-animate="fadeInUp" data-animate-delay="8">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h3 class="card-title">Frontend Development</h3>
+                    </div>
+                    <p class="card-text">Creating responsive, interactive, and visually appealing user interfaces using modern frontend technologies including HTML, CSS, JavaScript, and React for seamless user experiences.</p>
+                    <div class="service-features" style="margin: var(--spacing-md) 0;">
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="margin-bottom: var(--spacing-xs); display: flex; align-items: center; gap: var(--spacing-sm); color: var(--clr-text-light); font-size: var(--font-size-sm);">
+                                <i class="fas fa-check" style="color: var(--clr-primary);"></i> Responsive design & layout
+                            </li>
+                            <li style="margin-bottom: var(--spacing-xs); display: flex; align-items: center; gap: var(--spacing-sm); color: var(--clr-text-light); font-size: var(--font-size-sm);">
+                                <i class="fas fa-check" style="color: var(--clr-primary);"></i> Interactive UI with JavaScript
+                            </li>
+                            <li style="margin-bottom: var(--spacing-xs); display: flex; align-items: center; gap: var(--spacing-sm); color: var(--clr-text-light); font-size: var(--font-size-sm);">
+                                <i class="fas fa-check" style="color: var(--clr-primary);"></i> React & modern frameworks
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="btn btn-outline btn-sm learn-more-btn" data-service="frontend-development" style="width: 100%;">
+                        <span>Learn More</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+
+                <!-- Service 9: Full Stack Web Developer -->
+                <div class="card" id="full-stack-developer" data-animate="fadeInUp" data-animate-delay="9">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3 class="card-title">Full Stack Web Developer</h3>
+                    </div>
+                    <p class="card-text">End-to-end web application development covering both frontend and backend, including database design, API development, and deployment using modern frameworks and technologies.</p>
+                    <div class="service-features" style="margin: var(--spacing-md) 0;">
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="margin-bottom: var(--spacing-xs); display: flex; align-items: center; gap: var(--spacing-sm); color: var(--clr-text-light); font-size: var(--font-size-sm);">
+                                <i class="fas fa-check" style="color: var(--clr-primary);"></i> Frontend: HTML, CSS, JavaScript, React
+                            </li>
+                            <li style="margin-bottom: var(--spacing-xs); display: flex; align-items: center; gap: var(--spacing-sm); color: var(--clr-text-light); font-size: var(--font-size-sm);">
+                                <i class="fas fa-check" style="color: var(--clr-primary);"></i> Backend: Python, Flask, Django
+                            </li>
+                            <li style="margin-bottom: var(--spacing-xs); display: flex; align-items: center; gap: var(--spacing-sm); color: var(--clr-text-light); font-size: var(--font-size-sm);">
+                                <i class="fas fa-check" style="color: var(--clr-primary);"></i> Database: SQLite, MySQL, PostgreSQL
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="btn btn-outline btn-sm learn-more-btn" data-service="full-stack-developer" style="width: 100%;">
+                        <span>Learn More</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
                 </div>
             </div>
         </div>
@@ -487,12 +539,11 @@
                 <div class="footer-col">
                     <h3>Services</h3>
                     <ul class="footer-links">
-                        <li><a href="services.html#frontend">Web Design</a></li>
-                        <li><a href="services.html#frontend">Frontend Development</a></li>
-                        <li><a href="services.html#ui-ux">UI/UX Design</a></li>
-                        <li><a href="services.html#javascript">JavaScript Development</a></li>
-                        <li><a href="services.html#python">Python Development</a></li>
-                        <li><a href="services.html#ai">AI Solutions</a></li>
+                        <li><a href="services.html#web-development">Full Stack Web Development</a></li>
+                        <li><a href="services.html#python-projects">Python Web Development</a></li>
+                        <li><a href="services.html#ai-projects">AI Projects</a></li>
+                        <li><a href="services.html#ai-projects">AI Chatbot</a></li>
+                        <li><a href="services.html#automation">Automation</a></li>
                     </ul>
                 </div>
 
@@ -502,7 +553,7 @@
                     <p style="color: var(--clr-text-muted); font-size: var(--font-size-sm); margin-bottom: var(--spacing-lg);">
                         Subscribe to get the latest updates on projects, services, and tech insights.
                     </p>
-                    <form class="footer-newsletter" onsubmit="event.preventDefault(); alert('Thank you for subscribing!');">
+                    <form class="footer-newsletter" action="https://formspree.io/f/xpwzgkpd" method="POST">
                         <div class="footer-newsletter-input-group">
                             <input type="email" placeholder="Your email address" required class="footer-newsletter-input">
                             <button type="submit" class="footer-newsletter-btn">
@@ -543,10 +594,10 @@
             // Service data
             const services = {
                 'web-development': {
-                    title: 'Web Development',
+                    title: 'Full Stack Web Development',
                     icon: 'fas fa-globe',
-                    description: 'I build modern, responsive, and high-performance websites using HTML, CSS, JavaScript, and Python. From simple landing pages to full-featured web applications, I deliver clean, semantic code that provides exceptional user experiences.',
-                    technologies: ['HTML', 'CSS', 'JavaScript', 'Python'],
+                    description: 'I build modern, responsive, and high-performance websites using HTML, CSS, JavaScript, and Python. From simple landing pages to full-featured web applications, including full stack development with backend integration, I deliver clean, semantic code that provides exceptional user experiences.',
+                    technologies: ['HTML', 'CSS', 'JavaScript', 'Python', 'Backend Integration'],
                     process: [
                         'Planning and research - Understanding requirements and target audience',
                         'Design and prototyping - Creating wireframes and mockups',
@@ -554,13 +605,13 @@
                         'Testing and optimization - Ensuring cross-browser compatibility and performance',
                         'Delivery and deployment - Handing over the final product'
                     ],
-                    features: ['Responsive Design', 'Interactive UI', 'Python Integration', 'Cross-browser Compatible', 'Performance Optimized', 'Clean Code']
+                    features: ['Responsive Design', 'Interactive UI', 'Full Stack Development', 'Cross-browser Compatible', 'Performance Optimized', 'Clean Code']
                 },
                 'python-projects': {
-                    title: 'Python Projects',
+                    title: 'Python Web Development',
                     icon: 'fab fa-python',
-                    description: 'I develop Python-based solutions including automation scripts, data processing tools, web scraping, file management, and backend systems. My Python projects help businesses automate repetitive tasks and process data efficiently.',
-                    technologies: ['Python', 'BeautifulSoup', 'Pandas', 'Automation'],
+                    description: 'I develop Python-based web applications and solutions including automation scripts, data processing tools, web scraping, file management, and backend systems. My Python projects help businesses automate repetitive tasks and process data efficiently.',
+                    technologies: ['Python', 'Django', 'Flask', 'BeautifulSoup', 'Pandas', 'Automation'],
                     process: [
                         'Requirement analysis - Understanding the automation needs',
                         'Planning - Outlining the Python architecture',
@@ -568,7 +619,7 @@
                         'Testing - Ensuring functionality works correctly',
                         'Optimization - Improving performance and reliability'
                     ],
-                    features: ['File Organization', 'Data Processing', 'Web Scraping', 'Task Automation', 'PDF Processing', 'Email Automation']
+                    features: ['Web Applications', 'File Organization', 'Data Processing', 'Web Scraping', 'Task Automation', 'Email Automation']
                 },
                 'ai-projects': {
                     title: 'AI Projects',
@@ -583,34 +634,6 @@
                         'Deployment - Integrating the solution'
                     ],
                     features: ['Chatbots', 'Recommendation Systems', 'Data Analysis', 'ML Models', 'Workflow Automation', 'Intelligent Solutions']
-                },
-                'seo': {
-                    title: 'SEO',
-                    icon: 'fas fa-search',
-                    description: 'I optimize websites for search engines with proper meta tags, semantic HTML, fast loading speeds, mobile-friendliness, and content strategy to improve rankings and drive organic traffic.',
-                    technologies: ['SEO', 'HTML', 'Performance', 'Analytics'],
-                    process: [
-                        'Audit - Analyzing current SEO performance',
-                        'Keyword research - Finding the right keywords',
-                        'On-page optimization - Optimizing content and HTML',
-                        'Technical SEO - Improving site speed and structure',
-                        'Monitoring - Tracking rankings and performance'
-                    ],
-                    features: ['Meta Tags', 'Semantic HTML', 'Fast Loading', 'Mobile-friendly', 'Content Strategy', 'Rankings Improvement']
-                },
-                'digital-marketing': {
-                    title: 'Digital Marketing',
-                    icon: 'fas fa-chart-line',
-                    description: 'I help businesses grow online with social media management, content marketing, email campaigns, and data-driven strategies to reach the right audience and achieve measurable results.',
-                    technologies: ['Social Media', 'Content Marketing', 'Email', 'Analytics'],
-                    process: [
-                        'Strategy development - Creating a marketing plan',
-                        'Content creation - Developing engaging content',
-                        'Campaign execution - Running marketing campaigns',
-                        'Monitoring - Tracking performance metrics',
-                        'Optimization - Improving based on data'
-                    ],
-                    features: ['Social Media Management', 'Content Marketing', 'Email Campaigns', 'Data-driven Strategies', 'Audience Targeting', 'Performance Analytics']
                 }
             };
 

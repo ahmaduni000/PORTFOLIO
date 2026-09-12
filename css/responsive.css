@@ -109,6 +109,10 @@
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .navbar-nav {
         gap: var(--spacing-sm);
     }
@@ -169,6 +173,15 @@
 
     .grid-cols-3 {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .service-section ul[style*="repeat(2"],
+    .service-benefits {
+        grid-template-columns: 1fr !important;
     }
 
     .section {
@@ -264,6 +277,22 @@
    Mobile Small (320px - 479px)
    ========================================================================== */
 @media (max-width: 479px) {
+    .loader-progress {
+        width: 200px;
+    }
+
+    .loader-logo .logo-text {
+        font-size: 1.5rem;
+    }
+
+    .loader-logo .logo-tagline {
+        font-size: 0.75rem;
+    }
+
+    .loader-percentage {
+        font-size: 1.25rem;
+    }
+
     .container {
         max-width: 95%;
         padding: var(--spacing-sm) 0;
@@ -381,6 +410,26 @@
 
     .services-grid {
         grid-template-columns: 1fr;
+    }
+
+    .service-modal-body {
+        padding: var(--spacing-xl);
+    }
+
+    .service-modal-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .service-modal-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.5rem;
+    }
+
+    .service-section ul[style*="repeat(2"],
+    .service-benefits {
+        grid-template-columns: 1fr !important;
     }
 
     .projects-grid {
